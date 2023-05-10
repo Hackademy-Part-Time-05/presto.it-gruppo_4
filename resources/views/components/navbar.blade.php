@@ -41,7 +41,7 @@
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
-                    <form action="/logout" method="POST">
+                    <form action="{{route('logout')}}" method="POST">
                         @csrf
                         <button type="submit" class="btn btn-sm btn-danger ms-2">Esci</button>
                     </form>

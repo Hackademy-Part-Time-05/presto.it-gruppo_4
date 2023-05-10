@@ -3,7 +3,8 @@
     <div class="row">
         <div class="col-6 mx-auto ">
             <h1> LOGIN </h1>
-            <form action="/login" method="POST">
+            <form action="{{route('login')}}" method="POST">
+                @csrf
                 <div class="row g-3">
                     <div class="col-12">
                         <label for="email">Email</label>
