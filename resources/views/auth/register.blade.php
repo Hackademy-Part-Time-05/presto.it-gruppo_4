@@ -1,11 +1,8 @@
 <x-main>
-
-
 <div class="container mt-5">
-    
     <div class="row">
-        <h1 class="text-center">REGISTRATI</h1>
         <div class="col-6 mx-auto ">
+            <h1 class="text-center">REGISTRATI</h1>
             <form action="/login" method="POST">
                 <div class="row g-3">
                     
@@ -33,5 +30,4 @@
     </div>
    
 </div>
-
 </x-main>

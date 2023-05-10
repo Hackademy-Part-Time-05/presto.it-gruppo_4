@@ -12,9 +12,6 @@
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Chi siamo</a>
-        </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Annunci
@@ -25,13 +22,33 @@
           </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contatti</a>
-          </li>S
-          <li class="nav-item">
           <div class="d-flex">
             <a href="#" class="nav-link-icon-presto ms-lg-0 ms-2"><i class="fa-solid fa-magnifying-glass"></i></a>
             <button class="btn btn-presto ms-lg-2 ms-4">Annunci salienti</button>
           </div>
+
+          @guest
+          <li class="nav-item">
+            <a class="nav-link" href="/login">Login</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/register">Registrati</a>
+          </li>
+          @else
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                {{ auth()->user()->email }}
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li>
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <button type="submit" class="btn btn-sm btn-danger ms-2">Esci</button>
+                    </form>
+                </li>
+              </ul>
+            </li>
+          @endguest
         </li>
       </ul>
     </div>
