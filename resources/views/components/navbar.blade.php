@@ -22,10 +22,11 @@
           </ul>
           </li>
           <li class="nav-item">
-          <div class="d-flex">
-            <a href="#" class="nav-link-icon-presto ms-lg-0 ms-2"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <button class="btn btn-presto ms-lg-2 ms-4">Annunci salienti</button>
-          </div>
+          @auth
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('announcement.create')}}">Inserisci annuncio</a>
+          </li>
+          @endauth
 
           @guest
           <li class="nav-item">
