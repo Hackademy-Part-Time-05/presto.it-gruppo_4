@@ -13,5 +13,7 @@
     {{$slot}}
     <x-footer/>
     @livewireScripts
+
+    <h1>Prova</h1>
 </body>
 </html>
