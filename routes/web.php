@@ -17,8 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [FrontController::class, 'welcome']);
-Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
-Route::get('/annuncio/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
-Route::get('/annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcementIndex');
-
 Route::get('/annuncio/nuovo', [AnnouncementController::class, 'create'])->name('announcement.create')->middleware('auth');
+Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
+Route::get('/annuncio/show/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
+Route::get('/annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcementIndex');
