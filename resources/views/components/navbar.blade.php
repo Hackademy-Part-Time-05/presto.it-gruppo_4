@@ -10,14 +10,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item">
-<<<<<<< HEAD
           <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="{{route('announcementIndex')}}">Annunci</a>
-=======
-          <a class="nav-link active" aria-current="page" href="">Home</a>
->>>>>>> 32f582e9082c3f84afb43698f2e00500c04525d4
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="categoriesDropdown">
@@ -26,7 +22,6 @@
           <ul class="dropdown-menu rounded-0 m-0" aria-labelledby="categoriesDropdown">
               @foreach ($categories as $category)
                 <li><a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item">{{($category->name)}}</a></li>
-                <!-- href = route('categoryShow', compact('category')) -->
                 <li><hr class="dropdown-divider"></li>
               @endforeach
           </ul>
