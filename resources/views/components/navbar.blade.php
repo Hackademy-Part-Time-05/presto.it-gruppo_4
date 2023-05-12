@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav id="mainNavbar" class="navbar navbar-expand-lg border-bottom p-0">
+<nav id="mainNavbar" class="navbar navbar-expand-lg border-bottom p-0 bg-info shadow rounded">
   <div class="container-fluid">
     <a class="navbar-brand fs-3 fw-bold" href="/"><i class="fa-solid fa-cart-shopping me-2"></i>presto.it</a>
     <button class="navbar-toggler text-presto" type="button" data-bs-toggle="collapse"
