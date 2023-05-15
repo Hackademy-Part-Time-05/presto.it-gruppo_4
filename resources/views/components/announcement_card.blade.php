@@ -1,4 +1,6 @@
-<div class="card my-2 my-md-5 shadow p-0" style="width: 18rem;">
+
+
+  <div class="card my-2 my-md-5 shadow p-0" style="width: 70rem">
     <img src="/announcements/scarpe.png" class="card-img-top" alt="...">
     <div class="card-body text-align-center d-flex flex-column justify-content-between">
       <h5 class="card-title text-center display-6 fw-bold">{{$announcement->title}}</h5>
@@ -13,6 +15,10 @@
         <a href="{{route('announcement.show',compact('announcement'))}}" class="text-light fst-italic fw-bold fs-3 py-2 py-md-4">Visualizza</a>
     </div>
 </div>
+</div>
+
+
+
 
 <script>
     function truncate(id){

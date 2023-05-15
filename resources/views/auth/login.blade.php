@@ -39,7 +39,7 @@
                     <input type="password" class="form-control" name="password">
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-primary my-5 fst-italic shadow">Login</button>
+                    <button class="btn btn-dark my-5 fst-italic shadow rounded-pill">Login</button>
                 </div>
             </form>
         </div>

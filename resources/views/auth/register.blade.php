@@ -23,7 +23,7 @@
                     <input type="password" class="form-control" name="password_confirmation">
                 </div>
                 <div class="d-flex justify-content-center">
-                    <button class="btn btn-primary my-5 fst-italic shadow">Registrati</button>
+                    <button class="btn btn-dark my-5 fst-italic shadow rounded-pill">Registrati</button>
                 </div>
             </form>
         </div>

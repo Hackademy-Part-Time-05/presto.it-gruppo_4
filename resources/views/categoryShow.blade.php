@@ -32,7 +32,7 @@
                         @empty
                         <div class="col-12">
                         <p class="h1">Non sono presenti annunci per questa categoria!</p>
-                        <p class="h2">Pubblicane uno: <a href="{{route('announcement.create')}}" class="btn btn-success shadow">Nuovo annuncio</a></p>
+                        <p class="h2">Pubblicane uno: <a href="{{route('announcement.create')}}" class="btn btn-success shadow rounded-pill">Nuovo annuncio</a></p>
                         </div>
                         @endforelse
         </div>
