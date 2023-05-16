@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller {
     public function welcome() {
-        $announcements = Announcement::latest()->take(6)->get();
+        $announcements = Announcement::latest()->where('is_accepted', true)->take(6)->get();
         return view('welcome', compact('announcements'));
     }
 

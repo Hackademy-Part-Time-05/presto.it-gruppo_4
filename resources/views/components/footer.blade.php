@@ -3,7 +3,9 @@
       <div class="row d-flex justify-content-between">
         <div class="col-12 col-md-4">
           <ul class="list-group list-group-flush w-100">
-            <li class="list-group-item bg-dark text-light text-center text-md-start">Lavora con noi</li>
+            <li class="list-group-item bg-dark text-light text-center text-md-start">
+              <a href="{{route('become.revisor')}}" class="btn btn-warning text-light shadow my-3">Vuoi lavorare con noi? Diventa revisore!</a>
+            </li>
             <li class="list-group-item bg-dark text-light text-center text-md-start">Contatti</li>
           </ul>
         </div>
