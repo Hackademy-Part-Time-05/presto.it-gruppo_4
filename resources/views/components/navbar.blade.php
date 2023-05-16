@@ -49,7 +49,7 @@
                 <li>
                     <form action="{{route('logout')}}" method="POST">
                         @csrf
-                        <button type="submit" class="btn btn-sm btn-danger ms-2">Esci</button>
+                        <button type="submit" class="btn btn-sm btn-dark ms-2 rounded-pill">Esci</button>
                     </form>
                 </li>
               </ul>

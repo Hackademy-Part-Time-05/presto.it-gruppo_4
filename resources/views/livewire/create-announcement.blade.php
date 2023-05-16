@@ -1,7 +1,7 @@
 <div>
-    <h1>Crea il tuo annuncio</h1>
-
-    @if (session()->has('message'))
+    
+    <div class="container my-5">
+        @if (session()->has('message'))
         <div class="flex flex-row justify-center my 2 alert alert-success">
             {{session('message')}}
         </div>
@@ -50,6 +50,8 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-primary shadow px-4 py-2">Crea</button>
+        <button type="submit" class="btn btn-dark shadow px-4 py-2 rounded-pill my-3">Crea</button>
     </form>
+      </div>
+    
 </div>
