@@ -22,12 +22,9 @@ Route::get('/annuncio/nuovo', [AnnouncementController::class, 'create'])->name('
 Route::get('/categoria/{category}', [FrontController::class, 'categoryShow'])->name('categoryShow');
 Route::get('/annuncio/show/{announcement}', [AnnouncementController::class, 'showAnnouncement'])->name('announcement.show');
 Route::get('/annunci', [AnnouncementController::class, 'indexAnnouncement'])->name('announcementIndex');
-<<<<<<< HEAD
 Route::get('/revisor', [RevisorController::class, 'index'])->name('revisor.index')->middleware('isRevisor');
 Route::patch('/accetta/annuncio/{announcement}', [RevisorController::class, 'acceptAnnouncement'])->name('revisor.accept_announcement')->middleware('isRevisor');
 Route::patch('/rifiuta/annuncio/{announcement}', [RevisorController::class, 'rejectAnnouncement'])->name('revisor.reject_announcement')->middleware('isRevisor');
 Route::get('/richiesta/revisore', [RevisorController::class, 'becomeRevisor'])->middleware('auth')->name('become.revisor');
 Route::get('/rendi/revisore/{user}', [RevisorController::class, 'makeRevisor'])->name('make.revisor');
-=======
 Route::get('/ricerca/annuncio',[FrontController::class,'searchAnnouncements'])->name('announcements.search');
->>>>>>> f39f34e (user story 10 ricerca)

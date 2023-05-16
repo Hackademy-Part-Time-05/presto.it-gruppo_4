@@ -18,7 +18,6 @@ class Announcement extends Model {
     public function user() {
         return $this->belongsTo(User::class);
     }
-<<<<<<< HEAD
 
     public static function toBeRevisionedCount() {
         return Announcement::where('is_accepted', null)->count();
@@ -28,7 +27,8 @@ class Announcement extends Model {
         $this->is_accepted = $value;
         $this->save();
         return true;
-=======
+    }
+    
     public function toSearchableArray()
     {
         $category = $this->category;
@@ -39,6 +39,5 @@ class Announcement extends Model {
             'category'=>$this->category,
         ];
         return $array;
->>>>>>> f39f34e (user story 10 ricerca)
     }
 }
