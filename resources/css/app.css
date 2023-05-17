@@ -79,6 +79,13 @@ background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%
     margin-right: 100px;
   }
 
+  /*===DROPDOWN===*/
+  
+
+
+/*===BUTTON===*/
+
+
 .linkCategoryAnnouncementShow{
   background-color: var(--green);
   color: var(--dark);
@@ -111,17 +118,133 @@ background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%
     background-color: var(--dark); /* Colore di sfondo al click */
     color: var(--light); /* Colore del testo al click */
   } 
+
+   /* Button Navbar zona revisore */
+
+   .buttonAuditorZoneNavbar{
+    background-color: #ffc107;
+    color: var(--dark);
+   }
+
+   .buttonAuditorZoneNavbar:hover {
+    background-color: var(--dark); /* Colore di sfondo durante il passaggio del mouse */
+    color: var(--light); /* Colore del testo durante il passaggio del mouse */
+  }
+  
+  .buttonAuditorZoneNavbar:active {
+    background-color: var(--dark); /* Colore di sfondo al click */
+    color: var(--light); /* Colore del testo al click */
+  }
+
+  /* Button Search Navbar */
+
+  .buttonSearchNavbar{
+    background-color: var(--dark);
+    color: var(--light);
+  }
+
+  .buttonSearchNavbar:hover {
+    background-color: var(--dark); /* Colore di sfondo durante il passaggio del mouse */
+    color: var(--light); /* Colore del testo durante il passaggio del mouse */
+  }
+
+  .buttonSearchNavbar:active {
+    background-color: var(--dark); /* Colore di sfondo al click */
+    color: var(--light); /* Colore del testo al click */
+  }
+
   /*===INPUT===*/
+  
+  /* classe custom imput */
   
   .inputCostum {
     border-radius: 3px;
     border:2px solid #5b616a;
-    } /* classe custom imput */
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    }
   
-  #inputQuantity:focus {
+ /* Focus degli imput*/ 
+ 
+    .inputCostum:focus {
     box-shadow: 0 0 5px var(--dark); /* Colore dell'ombra al click */
     outline: none;
-  }  /* Imput quantità da aggiungere al carrello */    
+  }
+
+  /* Classe custom degli imput del login e del register*/
+  
+  .imputRegisterLoginCustom{
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0.375rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+  /* Focus degli imput del login e del register*/
+  
+  .imputRegisterLoginCustom:focus {
+    box-shadow: 0 0 5px var(--dark); /* Colore dell'ombra al click */
+    outline: none;
+  }
+
+
+  
+  /* Focus degli imput*/ 
+  
+  .inputCostum:focus {
+    box-shadow: 0 0 5px var(--dark); /* Colore dell'ombra al click */
+    outline: none;
+  }
+
+  /* Classe custom imput search navbar*/
+  
+  .imputSearchNavbar{
+    border:2px solid #5b616a;
+    display: block;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  }
+
+    /* Focus dell'imput search navbar*/ 
+  
+  .imputSearchNavbar:focus {
+    box-shadow: 0 0 5px var(--dark); /* Colore dell'ombra al click */
+    outline: none;
+  }
+
 
 
 /*===NAVBAR===*/

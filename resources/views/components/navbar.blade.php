@@ -56,7 +56,7 @@
             </li>
             @if (Auth::user()->is_revisor)
               <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative">
+                <a href="{{route('revisor.index')}}" class="nav-link btn-sm position-relative mx-4 buttonAuditorZoneNavbar">
                   Zona Revisore
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{App\Models\Announcement::toBeRevisionedCount()}}
@@ -67,8 +67,8 @@
             @endif
           @endguest
           <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
-          <input type="search" name="searched" class="form-control" placeholder="Cerca..." aria-label="Search">
-          <button class="btn btn-primary" type="submit">Cerca</button>
+          <input type="search" name="searched" class="rounded-start imputSearchNavbar" placeholder="Cerca..." aria-label="Search">
+          <button class="rounded-end buttonSearchNavbar" type="submit">Cerca</button>
           </form>
           <button class="btn btn-round" id="skinButton"><i class="fa-solid fa-shirt"></i></button>
         </li>

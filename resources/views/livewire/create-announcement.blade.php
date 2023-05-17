@@ -5,7 +5,7 @@
 
         <div class="mb-3">
             <label for="title">Titolo annuncio</label>
-            <input wire:model="title" type="text" class="form-control @error('title') is-invalid @enderror">
+            <input wire:model="title" type="text" id="inputTitleCreateAnnouncement" class="inputCostum @error('title') is-invalid @enderror">
             <span class="text-danger">
                 @error('title')
                 {{$message}}
@@ -15,7 +15,7 @@
 
         <div class="mb-3">
             <label for="title">Descrizione</label>
-            <input wire:model="body" type="text" class="form-control @error('body') is-invalid @enderror">
+            <input wire:model="body" type="text" id="inputBodyCreateAnnouncement" class="inputCostum @error('body') is-invalid @enderror">
             <span class="text-danger">
                 @error('body')
                 {{$message}}
@@ -25,7 +25,7 @@
 
         <div class="mb-3">
             <label for="title">Prezzo</label>
-            <input wire:model="price" type="text" class="form-control @error('price') is-invalid @enderror">
+            <input wire:model="price" type="text" id="inputPriceCreateAnnouncement" class="inputCostum @error('price') is-invalid @enderror">
             <span class="text-danger">
                 @error('price')
                 {{$message}}
@@ -35,7 +35,7 @@
 
         <div class="mb-3">
             <label for="category">Categoria</label>
-            <select wire:model.defer="category" id="category" class="form-control">
+            <select wire:model.defer="category" id="category" class="inputCostum">
                 <option value="">Scegli la categoria</option>
                 @foreach ($categories as $category)
                     <option value="{{$category->id}}">{{$category->name}}</option>
