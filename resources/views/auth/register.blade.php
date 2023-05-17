@@ -6,21 +6,21 @@
                 <h1 class="mt-4 fst-italic fw-bold">REGISTRATI</h1>
                 <div class="my-3">
                     <label for="name" class="m-2">Username</label>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" class="imputRegisterLoginCustom" name="name">
                     @error('name') <span class="danger">{{$message}}</span>@enderror
                 </div>
                 <div class="my-3">
                     <label for="email" class="m-2">Email</label>
-                    <input type="text" class="form-control" name="email">
+                    <input type="text" class="imputRegisterLoginCustom" name="email">
                     @error('email') <span class="danger">{{$message}}</span>@enderror
                 </div>
                 <div>
                     <label class="m-2" for="password">Password</label>
-                    <input type="password" class="form-control" name="password">
+                    <input type="password" class="imputRegisterLoginCustom" name="password">
                 </div>
                 <div>
                     <label class="m-2" for="password_confirmation">Conferma Password</label>
-                    <input type="password" class="form-control" name="password_confirmation">
+                    <input type="password" class="imputRegisterLoginCustom" name="password_confirmation">
                 </div>
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-dark my-5 fst-italic shadow rounded-pill">Registrati</button>
