@@ -9,6 +9,7 @@
     --dark:#5b616a;
     --primary: var(--blue);
 }
+
 .vh100{
     height:100vh;
 }
@@ -36,6 +37,12 @@ a{
 .text-blue {
     color:var(--blue);
 }
+
+.gradient1{
+  background: rgb(39,93,173);
+  background: linear-gradient(90deg, rgba(39,93,173,1) 0%, rgba(15,255,149,1) 100%);
+}
+
 .btn {
     border-radius: 0px;
     /* border:solid 2px var(--dark); */
