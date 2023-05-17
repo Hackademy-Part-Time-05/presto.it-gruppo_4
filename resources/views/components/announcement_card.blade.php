@@ -1,5 +1,3 @@
-
-
   <div class="card my-2 my-md-5 shadow p-0" style="width: 18rem">
     <p class="text-end py-3 px-4 text-blue fw-bold fs-5">{{$announcement->category->name}}</p>
     <img src="/announcements/scarpe.png" class="card-img-top" alt="...">
@@ -14,7 +12,6 @@
     <div class="bg-blue card-button d-flex justify-content-center">
         <a href="{{route('announcement.show',compact('announcement'))}}" class="text-light fst-italic fw-bold fs-3 py-2 py-md-4">Visualizza</a>
     </div>
-</div>
 </div>
 
 

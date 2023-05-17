@@ -1,7 +1,7 @@
 <x-main>
     <section class="container my-5">
         <div class="row justify-content-center">
-            <form action="/register" class="col-6 bg-green shadow my-5" method="POST">
+            <form action="/register" class="col-6 gradient0 shadow my-5" method="POST">
                 @csrf
                 <h1 class="mt-4 fst-italic fw-bold">REGISTRATI</h1>
                 <div class="my-3">

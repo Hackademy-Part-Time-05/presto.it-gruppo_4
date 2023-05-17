@@ -7,6 +7,8 @@
     --blue:#275dad;
     --light:#fcf7f8;
     --dark:#5b616a;
+    --pink:#e56399;
+    --lightblue:#40bcd8;
     --primary: var(--blue);
 }
 
@@ -22,6 +24,8 @@ body {
 a{
     text-decoration:none;
 }
+/*===COLOR UTILITIES===*/
+
 .bg-green{
     background-color:var(--green);
 }
@@ -37,23 +41,43 @@ a{
 .text-blue {
     color:var(--blue);
 }
-
+.gradient0{
+  background: rgb(15,255,149);
+background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%);
+}
 .gradient1{
   background: rgb(39,93,173);
   background: linear-gradient(90deg, rgba(39,93,173,1) 0%, rgba(15,255,149,1) 100%);
 }
 
+.gradient2{
+  background: rgb(229,99,153);
+  background: linear-gradient(90deg, rgba(229,99,153,1) 0%, rgba(64,188,216,1) 100%);
+}
+
+.gradient4{
+  background: rgb(64,188,216);
+  background: linear-gradient(90deg, rgba(64,188,216,1) 0%, rgba(229,99,153,1) 100%);
+
+}
+
+.bg-pink{
+  background-color:var(--pink);
+}
+.bg-lightblue{
+  background-color:var(--lightblue);
+}
+
+/*===BUTTON===*/
+
 .btn {
-    border-radius: 0px;
-    /* border:solid 2px var(--dark); */
+  border-radius: 0px;
+  /* border:solid 2px var(--dark); */
 }
 
 .text-wrapperAnnouncementsShow {
     margin-right: 100px;
   }
-
-/*===BUTTON===*/
-
 
 .linkCategoryAnnouncementShow{
   background-color: var(--green);
@@ -71,6 +95,7 @@ a{
   } /* Link button categoria nella visualizzazione annuncio */
 
   /* Button aggiungi al carrello nella visualizzazione annuncio */
+ 
   
   .buttonAddCartCustom {
     background-color: #212529;

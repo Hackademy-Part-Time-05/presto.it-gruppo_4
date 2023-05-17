@@ -70,44 +70,39 @@
           <input type="search" name="searched" class="form-control" placeholder="Cerca..." aria-label="Search">
           <button class="btn btn-primary" type="submit">Cerca</button>
           </form>
+          <button class="btn btn-round" id="skinButton"><i class="fa-solid fa-shirt"></i></button>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-{{-- <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav> --}}
+<script>
+  let toggleSkin = document.getElementById('skinButton');
+  toggleSkin.addEventListener('click',function()
+    {
+      let targetGreen = Array.from(document.getElementsByClassName('bg-green'));
+      targetGreen.forEach(function(target)
+      {
+        target.classList.toggle('bg-green');
+        target.classList.toggle('bg-pink');
+      });
+      let targetBlue = Array.from(document.getElementsByClassName('bg-blue'));
+      targetBlue.forEach(function(target)
+      {
+        target.classList.toggle('bg-blue');
+        target.classList.toggle('bg-lightblue');
+      });
+      let targetGradient0 = Array.from(document.getElementsByClassName('gradient0'))
+      targetGradient0.forEach(function(target)
+      {
+        target.classList.toggle('gradient0');
+        target.classList.toggle('gradient2');
+      });
+      let targetGradient1 = Array.from(document.getElementsByClassName('gradient1'))
+      targetGradient1.forEach(function(target)
+      {
+        target.classList.toggle('gradient1');
+        target.classList.toggle('gradient3');
+      });
+    });
+</script>
