@@ -43,7 +43,7 @@
           @else
           <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {{ auth()->user()->email }}
+                 Benvenuto, {{ auth()->user()->name }}
               </a>
               <ul class="dropdown-menu dropdown-menu-end">
                 <li>
@@ -54,7 +54,22 @@
                 </li>
               </ul>
             </li>
+            @if (Auth::user()->is_revisor)
+              <li class="nav-item">
+                <a href="{{route('revisor.index')}}" class="nav-link btn btn-outline-success btn-sm position-relative">
+                  Zona Revisore
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{App\Models\Announcement::toBeRevisionedCount()}}
+                  </span>
+                  <span class="visually-hidden">Unread messages</span>
+                </a>
+              </li>
+            @endif
           @endguest
+          <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
+          <input type="search" name="searched" class="form-control" placeholder="Cerca..." aria-label="Search">
+          <button class="btn btn-primary" type="submit">Cerca</button>
+          </form>
         </li>
       </ul>
     </div>

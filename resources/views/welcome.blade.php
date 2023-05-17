@@ -1,5 +1,6 @@
 <x-main>
     <x-header />
+
     {{-- <section class="container-fluid flex-grow-1">
         <div class="row h-100">
             <div class="col-12 bg-blue">

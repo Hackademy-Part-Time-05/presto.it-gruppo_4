@@ -8,11 +8,16 @@ use Illuminate\Http\Request;
 
 class FrontController extends Controller {
     public function welcome() {
-        $announcements = Announcement::latest()->take(6)->get();
+        $announcements = Announcement::latest()->where('is_accepted', true)->take(6)->get();
         return view('welcome', compact('announcements'));
     }
 
     public function categoryShow(Category $category) {
         return view('categoryShow', compact('category'));
+    }
+
+    public function searchAnnouncements(Request $request){
+        $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(6);
+        return view ('announcements.index',compact('announcements'));
     }
 }
