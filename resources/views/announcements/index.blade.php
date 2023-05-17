@@ -1,5 +1,5 @@
 <x-main>
-    <div class="container-fluid p-5 bg-success shadow mb-4">
+    <div class="container-fluid p-5 gradient1 shadow mb-4">
         <div class="row">
             <div class="col-12 text-light">
                 <h1 class="display-2">Annunci</h1>
