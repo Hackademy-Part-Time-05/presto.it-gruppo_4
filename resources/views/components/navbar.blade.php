@@ -1,6 +1,7 @@
 <!-- NAVBAR -->
 <nav id="mainNavbar" class="navbar navbar-expand-lg bg-green shadow py-0 py-md-4">
   <div class="container-fluid">
+    <img src="/public/images/logo apple.jpg" width="30" height="30" alt="">
     <a class="navbar-brand fs-3 fw-bold fst-italic" href="/">PRESTO.IT</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
