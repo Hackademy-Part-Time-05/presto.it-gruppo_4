@@ -9,7 +9,7 @@
     <section class="container">
         <div class="row justify-content-center d-flex">
             @foreach ($announcements as $announcement)
-            <div class="col-4">
+            <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
                 <x-announcement_card :$announcement />
             </div>
             @endforeach
