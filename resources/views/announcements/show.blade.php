@@ -37,7 +37,7 @@
                         <span class="text-decoration-line-through"></span>
                         <span class="h3">{{$announcement->price}}€</span>
                     </div>
-                    <p class="lead">{{$announcement->body}}</p>
+                    <p class="lead text-break">{{$announcement->body}}</p>
                     <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">Categoria: {{$announcement->category->name}}</a>
                     <p class="lead">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} - Autore {{$announcement->user->name ?? ''}}</p>
                     <div class="d-flex">

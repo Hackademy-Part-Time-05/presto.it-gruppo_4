@@ -1,5 +1,5 @@
 <header class="container-fluid flex-fill d-flex flex-column justify-content-center gradient0">
-  <div class="row">
+  <div class="row my-5">
     <div class="col-12">
       <div class="d-flex flex-column align-items-center mt-3">
         <h2 class="display-2 text-light animate__animated animate__fadeInRightBig">VENDI</h2>

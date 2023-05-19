@@ -42,7 +42,7 @@
     </div>
 </footer> --}}
 
-<footer class="footer py-3 bg-dark text-light">
+{{-- <footer class="footer py-3 bg-dark text-light">
   <div class="container">
     <div class="row justify-content-between">
       <div class="col-12 col-md-4">
@@ -90,5 +90,53 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> --}}
 
+<footer>
+  <section class="container-fluid py-3 bg-dark text-light ">
+    <div class="row d-flex">
+      <div class="col-6">
+        <ul class="list-group list-group-flush d-flex flex-column justify-content-between h-100">
+          @php
+              $links = [
+                '' => 'text-green fst-italic',
+                '338 123 45 67' => 'text-light',
+                'mail@example.it' => 'text-light',
+                'Indirizzo, 00, Citta' => 'text-light',
+
+              ]
+          @endphp
+          @foreach ($links as $link => $linkClass)
+          <li class="list-group list-item bg-dark text-start ms-2 ms-md-5 my-0 my-md-2 {{$linkClass}}">{{$link}}</li>
+           @endforeach
+        </ul>
+      </div>
+      <div class="col-6">
+        <ul class="list-group list-group-horizontal-md flush my-0 justify-content-end">
+          @php
+           $social = [
+            'facebook' => 'fa-brands fa-facebook',
+            'instagram' => 'fa-brands fa-instagram',
+            'tiktok' => 'fa-brands fa-tiktok',
+            'twiter' => 'fa-brands fa-twitter',
+            'youtube' => 'fa-brands fa-youtube',
+
+           ]   
+          @endphp
+          @foreach ($social as $name => $class)
+          <li class="list-group-item bg-dark text-light text-end me-2 {{$class}} fa-l"></li>     
+          @endforeach
+        </ul>
+      </div>
+
+    </div>
+  </section>
+</footer>
+<script>
+  let target=document.querySelector('.text-green.fst-italic');
+  let link = document.createElement('a');
+  link.href=`{{route('become.revisor')}}`;
+  link.textContent = `Diventa Revisore!`;
+  link.classList.add('text-green','revisorLink')
+  target.appendChild(link);
+</script>

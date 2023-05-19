@@ -15,6 +15,9 @@
 .vh100{
     height:100vh;
 }
+.h100{
+  height:100%;
+}
 body {
 
     background-color:var(--light);
@@ -40,6 +43,9 @@ a{
 }
 .text-blue {
     color:var(--blue);
+}
+.text-green {
+  color:var(--green);
 }
 .gradient0{
   background: rgb(15,255,149);
@@ -368,3 +374,10 @@ color: var(--light);
     width: 500px;
     height: 500px;
 } 
+
+.revisorLink{
+  color:var(--green);
+}
+.revisorLink:hover{
+  color:var(--green);
+}

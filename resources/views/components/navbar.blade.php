@@ -1,5 +1,5 @@
 <!-- NAVBAR -->
-<nav id="mainNavbar" class="navbar navbar-expand-lg bg-green shadow py-0 py-md-4">
+<nav id="mainNavbar" class="navbar navbar-expand-xl bg-green shadow py-0 py-md-4">
   <div class="container-fluid">
     <img src="\images\Presto.it-Logo.png" width="60" height="60" alt="">
     <a class="navbar-brand fs-3 fw-bold fst-italic" href="/">PRESTO.IT</a>
@@ -30,7 +30,7 @@
           <li class="nav-item">
           @auth
           <li class="nav-item">
-            <a class="nav-link" href="{{route('announcement.create')}}">Inserisci annuncio</a>
+            <a class="nav-link text-nowrap" href="{{route('announcement.create')}}">Nuovo annuncio</a>
           </li>
           @endauth
 
@@ -57,7 +57,7 @@
             </li>
             @if (Auth::user()->is_revisor)
               <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="nav-link btn-sm position-relative mx-4 buttonAuditorZoneNavbar">
+                <a href="{{route('revisor.index')}}" class="nav-link btn-sm position-relative mx-4 buttonAuditorZoneNavbar text-nowrap">
                   Zona Revisore
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{App\Models\Announcement::toBeRevisionedCount()}}
