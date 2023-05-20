@@ -67,6 +67,11 @@ background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%
 
 }
 
+.gradient3{
+  background: rgb(229,99,153);
+  background: linear-gradient(90deg, rgba(229,99,153,1) 0%, rgba(64,188,216,1) 100%);
+}
+
 .bg-pink{
   background-color:var(--pink);
 }
@@ -318,9 +323,6 @@ color: var(--light);
 
 
 /*===NAVBAR===*/
-.navbar{
-    background-color: var(--green);
-}
 .navbar-brand{
     font-family:'Barlow';
 }

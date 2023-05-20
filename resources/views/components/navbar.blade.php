@@ -57,7 +57,7 @@
             </li>
             @if (Auth::user()->is_revisor)
               <li class="nav-item">
-                <a href="{{route('revisor.index')}}" class="nav-link btn-sm position-relative mx-4 buttonAuditorZoneNavbar text-nowrap">
+                <a href="{{route('revisor.index')}}" class="nav-link btn-sm position-relative mx-4 buttonAuditorZoneNavbar">
                   Zona Revisore
                   <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                     {{App\Models\Announcement::toBeRevisionedCount()}}
@@ -77,33 +77,3 @@
     </div>
   </div>
 </nav>
-<script>
-  let toggleSkin = document.getElementById('skinButton');
-  toggleSkin.addEventListener('click',function()
-    {
-      let targetGreen = Array.from(document.getElementsByClassName('bg-green'));
-      targetGreen.forEach(function(target)
-      {
-        target.classList.toggle('bg-green');
-        target.classList.toggle('bg-pink');
-      });
-      let targetBlue = Array.from(document.getElementsByClassName('bg-blue'));
-      targetBlue.forEach(function(target)
-      {
-        target.classList.toggle('bg-blue');
-        target.classList.toggle('bg-lightblue');
-      });
-      let targetGradient0 = Array.from(document.getElementsByClassName('gradient0'))
-      targetGradient0.forEach(function(target)
-      {
-        target.classList.toggle('gradient0');
-        target.classList.toggle('gradient2');
-      });
-      let targetGradient1 = Array.from(document.getElementsByClassName('gradient1'))
-      targetGradient1.forEach(function(target)
-      {
-        target.classList.toggle('gradient1');
-        target.classList.toggle('gradient3');
-      });
-    });
-</script>
