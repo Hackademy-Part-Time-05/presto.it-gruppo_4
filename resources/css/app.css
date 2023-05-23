@@ -384,3 +384,11 @@ color: var(--light);
 .revisorLink:hover{
   color:var(--green);
 }
+
+/*Images Size create announcement*/
+
+.images-imput-create-announcement {
+  width: 30px;
+  height: 30px;
+
+}

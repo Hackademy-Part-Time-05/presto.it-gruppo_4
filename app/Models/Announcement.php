@@ -38,6 +38,11 @@ class Announcement extends Model {
             'body'=>$this->body,
             'category'=>$this->category,
         ];
-        return $array;
+        return $array;    
+    }
+    public function images(){
+    
+        return $this->hasMany(Image::class);
+        
     }
 }
