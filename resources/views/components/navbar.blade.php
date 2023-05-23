@@ -14,11 +14,11 @@
           <a class="nav-link" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('announcementIndex')}}">Annunci</a>
+          <a class="nav-link" href="{{route('announcementIndex')}}">{{__('ui.announcements')}}</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="categoriesDropdown">
-              Categorie
+            {{__('ui.categories')}}
           </a>
           <ul class="dropdown-menu rounded-0 m-0" aria-labelledby="categoriesDropdown">
               @foreach ($categories as $category)
@@ -27,6 +27,19 @@
               @endforeach
           </ul>
           </li>
+          <li>
+
+           
+            <x-_locale lang="it"/>
+            <x-_locale lang="es"/>
+            <x-_locale lang="en"/>
+           
+          </li>
+          
+
+            
+
+          
           <li class="nav-item">
           @auth
           <li class="nav-item">
