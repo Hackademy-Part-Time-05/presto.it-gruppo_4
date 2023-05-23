@@ -52,10 +52,10 @@
                             <div class="row">
                                 <div class="col-12">
                                     <p>Anteprima immagini</p>
-                                    <div class="row border border-4 border-info rounded py-4 images-imput-create-announcement">
+                                    <div class="row border border-4 border-info rounded py-4">
                                         @foreach ($images as $key=>$image)
                                         <div class="col my-3">
-                                            <div class="img_preview mx-auto rounded" style="background-image: url({{$image->temporaryUrl()}})"></div>
+                                            <div class="img_preview mx-auto rounded images-imput-create-announcement" style="background-image: url({{$image->temporaryUrl()}})"></div>
                                             <button type="button" class="btn btn-danger d-block text-center mt-2 mx-auto" wire:click="removeImage({{$key}})">Rimuovi</button>
                                         </div>
                                             
