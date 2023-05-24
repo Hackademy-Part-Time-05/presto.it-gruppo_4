@@ -38,4 +38,6 @@ return [
 'address' => 'Address',
 'city' => 'City',
 'becomeaReviewer' => 'Become a reviewer!',
+'chooseFile' => 'Choose file',
+'selectTheImages' => 'Select the images', 
 ];

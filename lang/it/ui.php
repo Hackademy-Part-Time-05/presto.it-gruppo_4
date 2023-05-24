@@ -38,4 +38,6 @@ return [
 'address' => 'Indirizzo',
 'city' => 'Città',
 'becomeaReviewer' => 'Diventa revisore!',
+'chooseFile' => 'Seleziona file',
+'selectTheImages' => 'Seleziona le immagini',
 ];

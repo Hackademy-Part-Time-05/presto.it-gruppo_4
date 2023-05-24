@@ -1,3 +1,8 @@
+
+@php
+    use Illuminate\Support\Facades\Lang;
+@endphp
+
 <!-- NAVBAR -->
 <nav id="mainNavbar" class="navbar navbar-expand-xl bg-green shadow py-0 py-md-4">
   <div class="container-fluid">
@@ -22,7 +27,7 @@
           </a>
           <ul class="dropdown-menu rounded-0 m-0 p-0" aria-labelledby="categoriesDropdown">
               @foreach ($categories as $category)
-                <li><a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item dropdownBackground dropdownNavbarText">{{($category->name)}}</a></li>
+                <li><a href="{{route('categoryShow', compact('category'))}}" class="dropdown-item dropdownBackground dropdownNavbarText">{{ Lang::get('category.' . $category->name) }}</a></li>
                 <li><hr class="dropdown-divider dropdownBackground m-0"></li>
               @endforeach
           </ul>

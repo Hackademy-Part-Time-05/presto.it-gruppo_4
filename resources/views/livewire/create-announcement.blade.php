@@ -9,23 +9,23 @@
                         
                         <div class="col-12">
                             <label for="title" class="fw-bold">{{__('ui.title')}}</label><br>
-                            <input wire:model.lazy="title" type="text" class="form-control">
+                            <input wire:model.lazy="title" type="text" class="imputRegisterLoginCustom">
                             @error('title') <span class="small text-danger">{{ $message }}</span> @enderror
                         </div>
                         
                         <div class="col-12">
                             <label for="price" class="fw-bold">{{__('ui.price')}}</label><br>
-                            <input wire:model.lazy="price" type="text" class="form-control">
+                            <input wire:model.lazy="price" type="text" class="imputRegisterLoginCustom">
                             @error('price') <span class="small text-danger">{{ $message }}</span> @enderror
                         </div>
                         
                         <div class="col-12">
                             <label for="category" class="fw-bold">{{__('ui.category')}}</label><br>
-                            <select wire:model.lazy="category" class="form-select" aria-label="Default select example">
+                            <select wire:model.lazy="category" class="imputRegisterLoginCustom" aria-label="Default select example">
                                 <option selected>{{__('ui.selectaCategory')}}</option>
                                 @foreach ($categories as $category)
                             
-                                    <option  value="{{ $category->id }}" >{{ $category->name }}</option>
+                                    <option  value="{{ $category->id }}" >{{ Lang::get('category.' . $category->name) }}</option>
                                     
                                 @endforeach
                             </select>
@@ -35,18 +35,25 @@
                         
                         <div class="col-12">
                             <label for="body" class="fw-bold">{{__('ui.description')}}</label><br>
-                            <input wire:model.lazy="body" type="text" class="form-control">
+                            <input wire:model.lazy="body" type="text" class="imputRegisterLoginCustom">
                             @error('body') <span class="small text-danger">{{ $message }}</span> @enderror
 
                         </div>
 
                        
-                        <div class="col-12">
+                        {{-- <div class="col-12">
                             <label for="images" class="fw-bold">{{__('ui.images')}}</label><br>
-                            <input wire:model="temporary_images" type="file" multiple name="images" class="form-control"
+                            <input wire:model="temporary_images" type="file" multiple name="images" class="imputRegisterLoginCustom"
                             @error('temporary_images.*') is-invalid @enderror" placeholder="IMG">
                             @error('temporary_images.*') <span class="small text-danger">{{ $message }}</span> @enderror
-                        </div> 
+                        </div>  --}}
+                        <div class="col-12">
+                            <label for="images" class="fw-bold">{{__('ui.images')}}</label><br>
+                            <input wire:model="temporary_images" type="file" multiple name="images" class="custom-file-input"
+                            @error('temporary_images.*') is-invalid @enderror" id="customFile">
+                            <label class="imputRegisterLoginCustom" for="customFile"><label class="custom-file-label me-3" for="customFile">{{__('ui.chooseFile')}}</label><span class="fs-5"> {{__('ui.selectTheImages')}}</span></label>
+                            @error('temporary_images.*') <span class="small text-danger">{{ $message }}</span> @enderror
+                        </div>
                             @if (!empty($images))
 
                             <div class="row">
