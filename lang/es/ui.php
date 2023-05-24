@@ -35,4 +35,7 @@ return [
 'addToCart'=> 'Agregar al carritò',
 'noListingsAvailableForThisCategory' => '¡No hay anuncios disponibles para esta categoría!',
 'publishOne' => 'Publica uno',
+'address' => 'Dirección',
+'city' => 'Ciudad',
+'becomeaReviewer' => '¡Conviértete en revisor!',
 ];

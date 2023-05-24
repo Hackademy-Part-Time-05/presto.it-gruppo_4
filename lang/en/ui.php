@@ -35,4 +35,7 @@ return [
 'addToCart'=> 'Add to cart',
 'noListingsAvailableForThisCategory' => 'No listings available for this category!',
 'publishOne' => 'Publish one',
+'address' => 'Address',
+'city' => 'City',
+'becomeaReviewer' => 'Become a reviewer!',
 ];

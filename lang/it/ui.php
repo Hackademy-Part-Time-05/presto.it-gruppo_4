@@ -35,4 +35,7 @@ return [
 'addToCart'=> 'Aggiungi al carrello',
 'noListingsAvailableForThisCategory' => 'Non sono presenti annunci per questa categoria!',
 'publishOne' => 'Pubblicane uno',
+'address' => 'Indirizzo',
+'city' => 'Città',
+'becomeaReviewer' => 'Diventa revisore!',
 ];
