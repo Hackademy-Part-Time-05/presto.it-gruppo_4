@@ -25,25 +25,25 @@ class CreateAnnouncement extends Component
         'title'=>'required|max:50|min:4',
         'body'=>'required|max:500|min:10',
         'category'=>'required',
-        'price'=>'required|numeric',
+        'price'=>'required|numeric|max:10000000',
         'temporary_images.*' => 'image|max:1024',
         'images.*' => 'image|max:1024',
         
 
     ];
-    protected $messages=[
-        'required'=>'è richiesto un :attribute',
-        'max'=>'troppo lungo ',
-        'min'=>'troppo corto ',
-        'numeric'=>'occhio inserisci un numero',
-        'temporary_images.required' => 'L\'immagine è richiesta',
-        'temporary_images.*.image' => 'I file devono essere immagini',
-        'images.image' => 'L\'immagine dev\'essere un\'immagine',
-        'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 1mb',
-        'images.max' => 'L\'immagine dev\'essere massimo di 1mb',
+    // protected $messages=[
+    //     'required'=>'è richiesto un :attribute',
+    //     'max'=>'troppo lungo ',
+    //     'min'=>'troppo corto ',
+    //     'numeric'=>'occhio inserisci un numero',
+    //     'temporary_images.required' => 'L\'immagine è richiesta',
+    //     'temporary_images.*.image' => 'I file devono essere immagini',
+    //     'images.image' => 'Il file dev\'essere un\'immagine',
+    //     'temporary_images.*.max' => 'L\'immagine dev\'essere massimo di 1mb',
+    //     'images.max' => 'L\'immagine dev\'essere massimo di 1mb',
 
 
-    ];
+    // ];
 
     public function updatedTemporaryImages(){
         if($this->validate([

@@ -163,9 +163,47 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'email' => [
+            'required' => 'Correo electrónico requerido',
         ],
+
+        'password' => [
+            'required' => 'Contraseña requerida',
+        ],
+
+        'title' => [
+            'required' => 'Título requerido',
+            'max' => 'Campo demasiado largo',
+            'min'=>'Campo demasiado corto',
+        ],
+
+        'price' => [
+            'required' => 'Precio requerido',
+            'numeric'=>'Atención, debes ingresar un número', 
+        ],
+
+        'category' => [
+            'required' => 'Categoria requerido',
+        ],
+
+        'body' => [
+            'required' => 'Descripción requerido',
+            'max' => 'Campo troppo lungo',
+            'min'=>'Campo troppo corto',
+        ],
+
+        'temporary_images.*' => [
+            'required' => 'La imagen es obligatoria',
+            'image' => 'Los archivos deben ser imágenes',
+            'max' => 'La imagen debe tener como máximo 1mb',
+        ],
+
+        'images' => [
+            'required' => 'La imagen es obligatoria',
+            'image' => 'El archivo debe ser una imagen',
+            'max' => 'La imagen debe tener como máximo 1mb',
+        ],
+
     ],
 
     /*
@@ -179,6 +217,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'Titulo',
+        'price' => 'Precio',
+        'category' => 'Categoria',
+        'body' => 'Descripción',
+    ],
 
 ];

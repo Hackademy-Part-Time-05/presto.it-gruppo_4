@@ -163,9 +163,53 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+        'email' => [
+            'required' => 'E-mail required',
         ],
+        
+        'password' => [
+            'required' => ' Password required',
+        ],
+
+        'category' => [
+            'required' => ' Category required',
+        ],
+
+        'title' => [
+            'required' => 'Title required',
+            'max' => 'Field too long',
+            'min'=>'Field too short',
+        ],
+
+        'price' => [
+            'required' => 'Price required',
+            'numeric'=>'Attention, you need to enter a number',
+            'max' => 'Field too long',
+        ],
+
+        'category' => [
+            'required' => 'Category required',
+        ],
+
+        'body' => [
+            'required' => 'Description required',
+            'max' => 'Field too long',
+            'min'=>'Field too short',
+        ],
+
+        'temporary_images.*' => [
+            'required' => 'An image is required',
+            'image' => 'Files must be images',
+            'max' => 'The image must be maximum 1mb',
+        ],
+
+        'images' => [
+            'required' => 'An image is required',
+            'image' => 'Files must be images',
+            'max' => 'The image must be maximum 1mb',
+        ],
+
+
     ],
 
     /*
@@ -179,6 +223,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'title',
+        'price' => 'price',
+        'category' => 'category',
+        'body' => 'description',
+     ],
 
 ];
