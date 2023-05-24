@@ -38,13 +38,13 @@
                         <span class="h3">{{$announcement->price}}€</span>
                     </div>
                     <p class="lead text-break">{{$announcement->body}}</p>
-                    <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">Categoria: {{$announcement->category->name}}</a>
-                    <p class="lead">Pubblicato il: {{$announcement->created_at->format('d/m/Y')}} - Autore {{$announcement->user->name ?? ''}}</p>
+                    <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">{{__('ui.category')}}: {{$announcement->category->name}}</a>
+                    <p class="lead">{{__('ui.postedOn')}}: {{$announcement->created_at->format('d/m/Y')}} - {{__('ui.author')}} {{$announcement->user->name ?? ''}}</p>
                     <div class="d-flex">
                         <input class="text-center me-3 inputCostum" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
                         <button class="btn btn-outline-dark flex-shrink-0 buttonAddCartCustom" id="buttonAddCartAnnouncementsShow" type="button">
                             <i class="bi-cart-fill me-1"></i>
-                            Aggiungi al carrello
+                            {{__('ui.addToCart')}}
                         </button>
                     </div>
                 </div>

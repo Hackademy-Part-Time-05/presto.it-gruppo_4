@@ -37,8 +37,8 @@
                 </div>
             @empty
                 <div class="col-12">
-                    <p class="h1 m-5">Non sono presenti annunci per questa categoria!</p>
-                    <p class="h2 m-5">Pubblicane uno: <a href="{{route('announcement.create')}}" class="btn btn-success shadow rounded-pill">Nuovo annuncio</a></p>
+                    <p class="h1 m-5">{{__('ui.noListingsAvailableForThisCategory')}}</p>
+                    <p class="h2 m-5">{{__('ui.publishOne')}}: <a href="{{route('announcement.create')}}" class="btn btn-success shadow rounded-pill">{{__('ui.newAdvertisement')}}</a></p>
                 </div>
             @endforelse
         </div>

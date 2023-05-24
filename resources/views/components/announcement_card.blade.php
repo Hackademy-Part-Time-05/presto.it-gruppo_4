@@ -10,7 +10,7 @@
       <p class="fw-bold display-5 text-blue fst-italic text-center">{{$announcement->price}}€</p>
     </div>
     <div class="bg-blue card-button d-flex justify-content-center">
-        <a href="{{route('announcement.show',compact('announcement'))}}" class="text-light fst-italic fw-bold fs-3 py-2 py-md-4">Visualizza</a>
+        <a href="{{route('announcement.show',compact('announcement'))}}" class="text-light fst-italic fw-bold fs-3 py-2 py-md-4">{{__('ui.view')}}</a>
     </div>
 </div>
 

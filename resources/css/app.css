@@ -193,23 +193,6 @@ color: var(--light);
     color: var(--light); /* Colore del testo al click */
   } 
 
-   /* Button Navbar zona revisore */
-
-   .buttonAuditorZoneNavbar{
-    background-color: #ffc107;
-    color: var(--dark);
-   }
-
-   .buttonAuditorZoneNavbar:hover {
-    background-color: var(--dark); /* Colore di sfondo durante il passaggio del mouse */
-    color: var(--light); /* Colore del testo durante il passaggio del mouse */
-  }
-  
-  .buttonAuditorZoneNavbar:active {
-    background-color: var(--dark); /* Colore di sfondo al click */
-    color: var(--light); /* Colore del testo al click */
-  }
-
   /* Button Search Navbar */
 
   .buttonSearchNavbar{
@@ -329,6 +312,26 @@ color: var(--light);
 }
 .nav-link{
     font-size: 2vh;
+}
+
+/*===DROPDOWN===*/
+
+.dropdownBackground {
+  background-color: var(--light);
+}
+
+/*Dropdown Navbar*/
+
+.dropdownNavbarText{
+  color: var(--dark);
+}
+.dropdownNavbarText:hover{
+  color: black;
+}
+
+.auditorZoneDropdown:hover{
+  background-color: #5b616a1b;
+  border-radius: 5px;
 }
 /*===CARDS===*/
 .card {
