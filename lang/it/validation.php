@@ -163,6 +163,13 @@ return [
     */
 
     'custom' => [
+
+        'name' => [
+            'required' => 'Username richiesto',
+            'max' => 'Campo demasiado corto',
+            'min'=>'Campo demasiado corto',
+        ],
+
         'email' => [
             'required' => 'E-mail richiesta',
             'unique:users,email' => 'E-mail non valida',

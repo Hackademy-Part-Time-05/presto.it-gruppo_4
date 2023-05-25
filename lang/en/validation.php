@@ -163,6 +163,13 @@ return [
     */
 
     'custom' => [
+
+        'name' => [
+            'required' => 'Username required',
+            'max' => 'Field too long',
+            'min'=>'Field too short',
+        ],
+
         'email' => [
             'required' => 'E-mail required',
         ],

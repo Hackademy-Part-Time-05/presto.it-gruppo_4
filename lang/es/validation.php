@@ -163,6 +163,13 @@ return [
     */
 
     'custom' => [
+
+        'name' => [
+            'required' => 'Usario requerido',
+            'max' => 'Campo demasiado corto',
+            'min'=>'Campo demasiado corto',
+        ],
+
         'email' => [
             'required' => 'Correo electrónico requerido',
         ],
@@ -188,8 +195,8 @@ return [
 
         'body' => [
             'required' => 'Descripción requerido',
-            'max' => 'Campo troppo lungo',
-            'min'=>'Campo troppo corto',
+            'max' => 'Campo demasiado largo',
+            'min'=>'Campo demasiado corto',
         ],
 
         'temporary_images.*' => [
