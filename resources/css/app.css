@@ -91,7 +91,7 @@ background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%
     margin-right: 100px;
   }
 
-  /*===DROPDOWN===*/
+/*===DROPDOWN===*/
   
 
 
@@ -358,15 +358,22 @@ color: var(--light);
 
 .dropdownBackground {
   background-color: var(--light);
-}
+  display: block;  
+  }
 
 /*Dropdown Navbar*/
 
 .dropdownNavbarText{
-  color: var(--dark);
+  color: var(--dark);  
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
 }
 .dropdownNavbarText:hover{
   color: black;
+  background-color: #0fff95;
+  
 }
 
 .auditorZoneDropdown:hover{
