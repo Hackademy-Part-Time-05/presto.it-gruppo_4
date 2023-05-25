@@ -40,4 +40,8 @@ return [
 'becomeaReviewer' => 'Diventa revisore!',
 'chooseFile' => 'Seleziona file',
 'selectTheImages' => 'Seleziona le immagini',
+'hereIsTheAdvertisementToReview' => 'Ecco l\'annuncio da revisionare',
+'thereAreNoAdvertisementsToReview' => 'Non ci sono annunci da revisionare',
+'accept' => 'Acceta',
+'reject' => 'Rifiuta',
 ];

@@ -5,14 +5,9 @@
             <div class="row gx-4 gx-lg-5 align-items-center">
                 <div class="col-md-6">
                     <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        </div>
                         <div class="carousel-inner">
-                          @foreach ($announcement->images as $image)
-                            <div class="carousel-item active">
+                          @foreach ($announcement->images as $key => $image)
+                            <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
                               <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 carousel-image" alt="...">
                             </div>
                           @endforeach
@@ -26,6 +21,7 @@
                         </button>
                       </div>
                 </div>
+              </div>
                 <div class="col-md-6">
                     <h1 class="display-5 fw-bolder">{{$announcement->title}}</h1>
                     <div class="fs-5 mb-5">
@@ -36,7 +32,7 @@
                     <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">{{__('ui.category')}}: {{$announcement->category->name}}</a>
                     <p class="lead">{{__('ui.postedOn')}}: {{$announcement->created_at->format('d/m/Y')}} - {{__('ui.author')}} {{$announcement->user->name ?? ''}}</p>
                     <div class="d-flex">
-                        <input class="text-center me-3 inputCostum" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
+                        <input class="text-center me-3 inputCostum" id="inputQuantity" type="number" value="1" style="max-width: 3rem" />
                         <button class="btn btn-outline-dark flex-shrink-0 buttonAddCartCustom" id="buttonAddCartAnnouncementsShow" type="button">
                             <i class="bi-cart-fill me-1"></i>
                             {{__('ui.addToCart')}}

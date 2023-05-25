@@ -6,7 +6,7 @@
         <p class="text-green"><a href="{{route('become.revisor')}}" class="btn btn-bg btnDark fs-5">{{__('ui.becomeaReviewer')}}</a></p>
       </div>
       <div class="col-12 col-md-6">
-        <ul class="list-group list-group-flush d-flex flex-column justify-content-between h-100">
+        <ul class="list-group list-unstyled list-group-flush d-flex flex-column justify-content-between h-100">
           <li class="text-light fs-5"><i class="bi bi-phone fs-3 mx-1"></i>338 123 45 67</li>
           <li class="text-light fs-5"><i class="bi bi-envelope-at fs-3 mx-1"></i>mail@example.it</li>
           <li class="text-light fs-5"><i class="bi bi-geo-alt fs-3 mx-1"></i>{{__('ui.address')}}, 00, {{__('ui.city')}}</li>

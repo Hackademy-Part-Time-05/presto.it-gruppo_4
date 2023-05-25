@@ -34,16 +34,7 @@
               @endforeach
           </ul>
           </li>
-          <li>
-           
-           
-            
-          </li>
-          
 
-            
-
-          
           <li class="nav-item">
           @auth
           <li class="nav-item">
@@ -59,28 +50,27 @@
               <a class="nav-link" href="/register">{{__('ui.register')}}</a>
           </li>
           @else
-          <li class="nav-item dropdown">
+            <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{__('ui.welcome')}}, {{ auth()->user()->name }}
               </a>
-              <ul class="dropdown-menu dropdown-menu-end dropdownBackground">
-                <li>
-                  @if (Auth::user()->is_revisor)
-                  <li class="nav-item">
-                    <a href="{{route('revisor.index')}}" class="nav-link position-relative me-4 ms-1 my-3 dropdownNavbarText auditorZoneDropdown">
-                      {{__('ui.auditorZone')}}
-                      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                        {{App\Models\Announcement::toBeRevisionedCount()}}
-                      </span>
-                      <span class="visually-hidden">Unread messages</span>
-                    </a>
-                  </li>
+              <ul class="dropdown-menu">
+                @if (Auth::user()->is_revisor)
+                <li>  
+                  <a href="{{route('revisor.index')}}" class="nav-link position-relative me-4 ms-1 my-3 auditorZoneDropdown text-dark">
+                  {{__('ui.auditorZone')}}
+                  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                    {{App\Models\Announcement::toBeRevisionedCount()}}
+                  </span>
+                  <span class="visually-hidden">Unread messages</span>
+                  </a>
+                </li>
                 @endif
-                    </li>
-                    <form action="{{route('logout')}}" method="POST">
-                        @csrf
-                        <button type="submit" class="btn btn-bg btn-dark ms-2 rounded-pill float-end mx-2">{{__('ui.logout')}}</button>
-                    </form>
+                <li> 
+              <form action="{{route('logout')}}" method="POST">
+                @csrf
+                  <button type="submit" class="btn btn-bg btn-dark ms-2 rounded-pill float-end mx-2">{{__('ui.logout')}}</button>
+              </form>
                 </li>
               </ul>
             </li>

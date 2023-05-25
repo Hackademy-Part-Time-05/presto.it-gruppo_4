@@ -39,5 +39,9 @@ return [
 'city' => 'City',
 'becomeaReviewer' => 'Become a reviewer!',
 'chooseFile' => 'Choose file',
-'selectTheImages' => 'Select the images', 
+'selectTheImages' => 'Select the images',
+'hereIsTheAdvertisementToReview' => 'Here is the advertisement to review',
+'thereAreNoAdvertisementsToReview' => 'There are no advertisements to review',
+'accept' => 'Accept',
+'reject' => 'Reject',
 ];
