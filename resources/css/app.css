@@ -435,3 +435,11 @@ color: var(--light);
   height: 300px;
 
 }
+
+
+/* ACCORDION */
+
+.accordionCustom {
+  background-color: var(--light);
+  color: var(--dark);
+}
