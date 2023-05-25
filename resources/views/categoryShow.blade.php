@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="row justify-content-around">
-            @forelse ($category->announcements as $index=>$announcement)
+            @forelse ($announcements as $index=>$announcement)
                 <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center">
                     <x-announcement_card :$announcement :$index />
                 </div>

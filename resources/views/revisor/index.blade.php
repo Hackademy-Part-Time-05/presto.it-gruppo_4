@@ -14,17 +14,17 @@
                 <div class="col-12">
                     <div class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img src="https://picsum.photos/1200/400" alt="" class="img-fluid p-3 rounded">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="https://picsum.photos/1200/400" alt="" class="img-fluid p-3 rounded">
-                            </div>
-
-                            <div class="carousel-item">
-                                <img src="https://picsum.photos/1200/400" alt="" class="img-fluid p-3 rounded">
-                            </div>
+                            @foreach ($announcement_to_check->images as $image)
+                                @if ($loop->first)
+                                    <div class="carousel-item active">
+                                    <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 carousel-image" alt="...">
+                                    </div>
+                                @else
+                                    <div class="carousel-item">
+                                        <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 carousel-image" alt="...">
+                                    </div>
+                                @endif
+                            @endforeach
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#showCarousel" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>

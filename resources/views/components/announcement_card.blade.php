@@ -5,7 +5,7 @@
   
   <div class="card my-2 my-md-4 shadow p-0" style="width: 18rem">
     <p class="text-end py-3 px-4 text-blue fw-bold fs-5">{{ Lang::get('category.' . $announcement->category->name) }}</p>
-    <img src="/announcements/scarpe.png" class="card-img-top" alt="...">
+    <img src="{{$announcement->images()->first()->getUrl(400,300)}}" class="card-img-top" alt="...">
     <div class="card-body text-align-center d-flex flex-column justify-content-between py-0">
       <h5 class="card-title text-center display-6 fw-bold my-0">{{$announcement->title}}</h5>
       @php

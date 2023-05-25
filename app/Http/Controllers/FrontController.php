@@ -13,16 +13,17 @@ class FrontController extends Controller {
     }
 
     public function categoryShow(Category $category) {
-        return view('categoryShow', compact('category'));
+        $announcements = Announcement::where('category_id', $category->id)->where('is_accepted', true)->get();
+        return view('categoryShow', compact('category', 'announcements'));
     }
 
-    public function searchAnnouncements(Request $request){
+    public function searchAnnouncements(Request $request) {
         $announcements = Announcement::search($request->searched)->where('is_accepted', true)->paginate(6);
-        return view ('announcements.index',compact('announcements'));
+        return view('announcements.index', compact('announcements'));
     }
 
-    public function setLanguage($lang){
-        
+    public function setLanguage($lang) {
+
         session()->put('locale', $lang);
         return redirect()->back();
     }

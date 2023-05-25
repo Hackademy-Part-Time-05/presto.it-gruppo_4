@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'Motori' => 'Engines',
-    'Informatica' => 'Computer Science',
-    'Elettrodomestici' => 'Appliances',
+    'Motori' => 'Automotives',
+    'Informatica' => 'Computers',
+    'Elettrodomestici' => 'Electronics',
     'Libri' => 'Books',
-    'Giochi' => 'Games',    
+    'Giochi' => 'Games',
     'Sport' => 'Sport',
     'Immobili' => 'Real estate',
-    'Telefoni' => 'Telephony',
+    'Telefoni' => 'Mobile phones and communication',
     'Arredamento' => 'Furnishings',
-    ];
+];
