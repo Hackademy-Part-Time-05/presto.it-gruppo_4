@@ -7,11 +7,12 @@
                 <div class="my-3 px-5 px-md-2">
                     <label for="email" class="m-2">Email</label>
                     <input type="text" class="imputRegisterLoginCustom" name="email">
-                    {{-- @error('email') <span class="danger">{{message}}</span>@enderror --}}
+                    @error('email') <span class="text-danger fs-5">{{$message}}</span>@enderror
                 </div>
                 <div class="px-5 px-md-2">
                     <label class="m-2" for="password">{{__('ui.password')}}</label>
                     <input type="password" class="imputRegisterLoginCustom" name="password">
+                    @error('password') <span class="fs-5 text-danger">{{$message}}</span>@enderror
                 </div>
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-dark my-5 fst-italic shadow rounded-pill">{{__('ui.login')}}</button>

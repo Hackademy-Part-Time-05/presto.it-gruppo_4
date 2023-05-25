@@ -163,10 +163,57 @@ return [
     */
 
     'custom' => [
-        'attribute-name' => [
-            'rule-name' => 'custom-message',
+
+        'name' => [
+            'required' => 'Username richiesto',
+            'max' => 'Campo demasiado corto',
+            'min'=>'Campo demasiado corto',
         ],
-    ],
+
+        'email' => [
+            'required' => 'E-mail richiesta',
+            'unique:users,email' => 'E-mail non valida',
+        ],
+
+        'password' => [
+            'required' => ' Password richiesta',
+        ],
+
+        'title' => [
+            'required' => 'Titolo richiesto',
+            'max' => 'Campo troppo lungo',
+            'min'=>'Campo troppo corto',
+        ],
+
+        'price' => [
+            'required' => 'Prezzo richiesto',
+            'numeric'=>'Occhio devi inserire un numero',
+            'max' => 'Campo troppo lungo', 
+        ],
+
+        'category' => [
+            'required' => 'Categoria richiesta',
+        ],
+
+        'body' => [
+            'required' => 'Descrizione richiesta',
+            'max' => 'Campo troppo lungo',
+            'min'=>'Campo troppo corto',
+        ],
+
+        'temporary_images.*' => [
+            'required' => 'L\'immagine è obbligatoria',
+            'image' => 'I file devono essere immagini',
+            'max' => 'L\'immagine dev\'essere massimo di 1mb',
+        ],
+
+        'images' => [
+            'required' => 'L\'immagine è obbligatoria',
+            'image' => 'I file devono essere immagini',
+            'max' => 'L\'immagine dev\'essere massimo di 1mb',
+        ],
+
+            ],
 
     /*
     |--------------------------------------------------------------------------
@@ -179,6 +226,11 @@ return [
     |
     */
 
-    'attributes' => [],
+    'attributes' => [
+        'title' => 'Titolo',
+        'price' => 'Prezzo',
+        'category' => 'Categoria',
+        'body' => 'Descrizione',
+    ],
 
 ];
