@@ -44,4 +44,10 @@ return [
 'thereAreNoAdvertisementsToReview' => 'There are no advertisements to review',
 'accept' => 'Accept',
 'reject' => 'Reject',
+'createYourAdvertisement' => 'Create your advertisement',
+'privacyPolicy' => 'Privacy Policy',
+'congratulationsYouHaveAcceptedTheAdvertisement' => 'Congratulations, you have accepted the advertisement!',
+'congratulationsYouHaveRejectedTheAdvertisement' => 'Congratulations, you have rejected the advertisement!',
+'congratulationsYouHaveSuccessfullyRequestedToBecomeaReviewer' => 'Congratulations! You have successfully requested to become a reviewer!',
+'congratulationsTheUserHasBecomeaReviewer' => 'Congratulations! The user has become a reviewer.',
 ];

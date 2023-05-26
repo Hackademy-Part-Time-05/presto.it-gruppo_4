@@ -176,6 +176,7 @@ return [
 
         'password' => [
             'required' => 'Contraseña requerida',
+            'confirmed' => 'La confirmación del campo de contraseña no coincide',
         ],
 
         'title' => [

@@ -29,7 +29,7 @@
                         <span class="h3">{{$announcement->price}}€</span>
                     </div>
                     <p class="lead text-break">{{$announcement->body}}</p>
-                    <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">{{__('ui.category')}}: {{$announcement->category->name}}</a>
+                    <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">{{__('ui.category')}}: {{ Lang::get('category.' . $announcement->category->name) }}</a>
                     <p class="lead">{{__('ui.postedOn')}}: {{$announcement->created_at->format('d/m/Y')}} - {{__('ui.author')}} {{$announcement->user->name ?? ''}}</p>
                     <div class="d-flex">
                         <input class="text-center me-3 inputCostum" id="inputQuantity" type="number" value="1" style="max-width: 3rem" />

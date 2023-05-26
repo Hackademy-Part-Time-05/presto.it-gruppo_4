@@ -46,9 +46,9 @@
 
                     <div class="container d-flex align-items-center justify-content-center vh-100">
                         <div class="text-center">
-                            <h5 class="card-title">{{__('ui.title')}}: {{$announcement_to_check->title}}</h5>
-                            <p class="card-text">{{__('ui.description')}}: {{$announcement_to_check->body}}</p>
-                            <p class="card-footer">{{__('ui.postedOn')}}: {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
+                            <h5 class="card-title fs-3 my-3 text-dark"><span class="fw-bold text-uppercase">{{__('ui.title')}}: </span> {{$announcement_to_check->title}}</h5>
+                            <p class="card-text fs-5 my-3"><span class=" text-dark fw-bold text-uppercase">{{__('ui.description')}}: </span> {{$announcement_to_check->body}}</p>
+                            <p class="card-footer fs-5 my-3"><span class=" text-dark fw-bold text-uppercase">{{__('ui.postedOn')}}: </span> {{$announcement_to_check->created_at->format('d/m/Y')}}</p>
                         </div>
                     </div>
         

@@ -23,7 +23,7 @@
       </div>
     </div>
     <div class="col-12 text-center">
-      <p class="text-light fs-5 mx-1">©2023 Presto.it by Gruppo 4 | VU | DS | AF | GMC | GA | Privacy Policy</p>
+      <p class="text-light fs-5 mx-1">©2023 Presto.it by Gruppo 4 | VU | DS | AF | GMC | GA | {{__('ui.privacyPolicy')}}</p>
     </div>
   </section>
 </footer>

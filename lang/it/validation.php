@@ -177,6 +177,7 @@ return [
 
         'password' => [
             'required' => ' Password richiesta',
+            'confirmed' => 'Il campo di conferma password non corrisponde.',
         ],
 
         'title' => [

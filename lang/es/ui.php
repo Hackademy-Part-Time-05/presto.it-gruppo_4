@@ -44,4 +44,10 @@ return [
 'thereAreNoAdvertisementsToReview' => 'No hay anuncios para revisar',
 'accept' => 'Acepta',
 'reject' => 'Rechaza',
+'createYourAdvertisement' => 'Create tu anuncio',
+'privacyPolicy' => ' Política de Privacidad',
+'congratulationsYouHaveAcceptedTheAdvertisement' => '¡Felicitaciones, has aceptado el anuncio!',
+'congratulationsYouHaveRejectedTheAdvertisement' => '¡Felicitaciones, has rechazado el anuncio!',
+'congratulationsYouHaveSuccessfullyRequestedToBecomeaReviewer' => '¡Felicitaciones! ¡Has solicitado convertirte en revisor correctamente!',
+'congratulationsTheUserHasBecomeaReviewer' => '¡Felicitaciones! El usuario se ha convertido en revisor.',
 ];

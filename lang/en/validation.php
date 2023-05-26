@@ -176,6 +176,7 @@ return [
         
         'password' => [
             'required' => ' Password required',
+            'confirmed' => 'The password field confirmation does not match',
         ],
 
         'category' => [
