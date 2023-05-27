@@ -52,7 +52,7 @@
                         </div>
                     </div>
         
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-12 col-md-6 d-flex align-items-center justify-content-center my-5">
                             <form action="{{route('revisor.accept_announcement', ['announcement'=> $announcement_to_check])}}" method="POST">
                                 @csrf
@@ -68,11 +68,78 @@
                                 <button type="submit" class="btn rounded-pill btn-danger  shadow">{{__('ui.reject')}}</button>
                             </form>
                         </div>
+                    </div> --}}
+
+                    <div class="row">
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center my-5">
+                            <form action="{{route('revisor.accept_announcement', ['announcement'=> $announcement_to_check])}}" method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="button" class="btn rounded-pill btn-success shadow" data-bs-toggle="modal" data-bs-target="#acceptModal">{{__('ui.accept')}}</button>
+                            </form>
+                        </div>
+                    
+                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center my-5">
+                            <form action="{{route('revisor.reject_announcement', ['announcement'=> $announcement_to_check])}}" method="POST">
+                                @csrf
+                                @method('PATCH')
+                                <button type="button" class="btn rounded-pill btn-danger shadow" data-bs-toggle="modal" data-bs-target="#rejectModal">{{__('ui.reject')}}</button>
+                            </form>
+                        </div>
                     </div>
+
+
+    <!-- Modal di conferma per l'accettazione -->
+
+<div class="modal fade" id="acceptModal" tabindex="-1" aria-labelledby="acceptModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modalHeaderCustom">
+                <h5 class="modal-title text-dark fw-bold text-uppercase" id="acceptModalLabel">{{__('ui.acceptConfirmation')}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modalBodyCustom fw-bold">
+                {{__('ui.acceptConfirmationMessage')}}
+            </div>
+            <div class="modal-footer modalFooterCustom">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{__('ui.cancel')}}</button>
+                <form action="{{route('revisor.accept_announcement', ['announcement'=> $announcement_to_check])}}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <button type="submit" class="btn btn-success">{{__('ui.accept')}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal di conferma per il rifiuto -->
+
+<div class="modal fade" id="rejectModal" tabindex="-1" aria-labelledby="rejectModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modalHeaderCustom">
+                <h5 class="modal-title text-dark fw-bold text-uppercase" id="rejectModalLabel">{{__('ui.rejectConfirmation')}}</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modalBodyCustom fw-bold">
+                {{__('ui.rejectConfirmationMessage')}}
+            </div>
+            <div class="modal-footer modalFooterCustom">
+                <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{__('ui.cancel')}}</button>
+                <form action="{{route('revisor.reject_announcement', ['announcement'=> $announcement_to_check])}}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <button type="submit" class="btn btn-danger">{{__('ui.reject')}}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
                 </div>
             @endif
                         </div>
-                      </div>
+                      </div>                  
                       
 
 

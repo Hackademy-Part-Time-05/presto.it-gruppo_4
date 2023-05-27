@@ -50,4 +50,11 @@ return [
 'congratulationsYouHaveRejectedTheAdvertisement' => '¡Felicitaciones, has rechazado el anuncio!',
 'congratulationsYouHaveSuccessfullyRequestedToBecomeaReviewer' => '¡Felicitaciones! ¡Has solicitado convertirte en revisor correctamente!',
 'congratulationsTheUserHasBecomeaReviewer' => '¡Felicitaciones! El usuario se ha convertido en revisor.',
+'acceptConfirmation' => 'Mensaje de confirmación',
+'acceptConfirmationMessage' => '¿Estás seguro de que quieres aceptar este anuncio?',
+'rejectConfirmation' => 'Mensaje de confirmación',
+'rejectConfirmationMessage' => '¿Estás seguro de que quieres rechazar este anuncio?',
+'cancel' => 'Cancelar',
+'areYouSureYouWantToSubmitTheRequestToBecomeaReviewer' => '¿Estás seguro de que quieres enviar la solicitud para convertirte en revisor?',
+'confirm' => 'Confirmación',
 ];

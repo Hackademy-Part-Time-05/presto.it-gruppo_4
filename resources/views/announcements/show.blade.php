@@ -11,14 +11,16 @@
                               <img src="{{$image->getUrl(400,300)}}" class="d-block w-100 carousel-image" alt="...">
                             </div>
                           @endforeach
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                          @if (count($announcement->images) > 1)
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
-                        </button>
+                        </a>
+                          @endif
                       </div>
                 </div>
               </div>
@@ -32,7 +34,7 @@
                     <a href="{{route('categoryShow', ['category' => $announcement->category])}}" class="my-2 border-top pt-2 border-dark card-link shadow btn linkCategoryAnnouncementShow" id="linkCategoryAnnouncementShow">{{__('ui.category')}}: {{ Lang::get('category.' . $announcement->category->name) }}</a>
                     <p class="lead">{{__('ui.postedOn')}}: {{$announcement->created_at->format('d/m/Y')}} - {{__('ui.author')}} {{$announcement->user->name ?? ''}}</p>
                     <div class="d-flex">
-                        <input class="text-center me-3 inputCostum" id="inputQuantity" type="number" value="1" style="max-width: 3rem" />
+                        <input class="text-center me-3 inputCostum" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
                         <button class="btn btn-outline-dark flex-shrink-0 buttonAddCartCustom" id="buttonAddCartAnnouncementsShow" type="button">
                             <i class="bi-cart-fill me-1"></i>
                             {{__('ui.addToCart')}}

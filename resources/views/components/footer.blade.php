@@ -3,8 +3,29 @@
   <section class="container-fluid py-3 bg-dark text-light ">
     <div class="row d-flex">
       <div class="col-12 text-start">
-        <p class="text-green"><a href="{{route('become.revisor')}}" class="btn btn-bg btnDark fs-5">{{__('ui.becomeaReviewer')}}</a></p>
+        <p class="text-green"><a href="#" class="btn btn-bg btnDark fs-5" data-bs-toggle="modal" data-bs-target="#confirmationRevisorZoneModal">{{__('ui.becomeaReviewer')}}</a></p>
       </div>
+
+      <!-- Modal di conferma -->
+<div class="modal fade" id="confirmationRevisorZoneModal" tabindex="-1" aria-labelledby="confirmationRevisorZoneModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header modalHeaderCustom">
+        <h5 class="modal-title text-dark fw-bold text-uppercase" id="confirmationRevisorZoneModalLabel">{{__('ui.acceptConfirmation')}}</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body modalBodyCustom fw-bold">
+        <p>{{__('ui.areYouSureYouWantToSubmitTheRequestToBecomeaReviewer')}}</p>
+      </div>
+      <div class="modal-footer modalFooterCustom">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">{{__('ui.cancel')}}</button>
+        <button type="button" class="btn btn-success"> <a href="{{route('become.revisor')}}" class="text-decoration-none text-light"> {{__('ui.confirm')}}</a></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
       <div class="col-12 col-md-6">
         <ul class="list-group list-unstyled list-group-flush d-flex flex-column justify-content-between h-100">
           <li class="text-light fs-5"><i class="bi bi-phone fs-3 mx-1"></i>338 123 45 67</li>

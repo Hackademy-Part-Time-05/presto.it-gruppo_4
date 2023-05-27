@@ -50,4 +50,11 @@ return [
 'congratulationsYouHaveRejectedTheAdvertisement' => 'Congratulations, you have rejected the advertisement!',
 'congratulationsYouHaveSuccessfullyRequestedToBecomeaReviewer' => 'Congratulations! You have successfully requested to become a reviewer!',
 'congratulationsTheUserHasBecomeaReviewer' => 'Congratulations! The user has become a reviewer.',
+'acceptConfirmation' => 'Message of confirmation',
+'acceptConfirmationMessage' => 'Are you sure you want to accept this advertisement?',
+'rejectConfirmation' => 'Message of confirmation',
+'rejectConfirmationMessage' => 'Are you sure you want to reject this advertisement?',
+'cancel' => 'Cancel',
+'areYouSureYouWantToSubmitTheRequestToBecomeaReviewer' => 'Are you sure you want to submit the request to become a reviewer?',
+'confirm' => 'Confirm',
 ];

@@ -450,3 +450,18 @@ color: var(--light);
   background-color: var(--light);
   color: var(--dark);
 }
+
+/* MODAL */
+
+.modalHeaderCustom {
+  background-color: var(--green);
+}
+
+.modalBodyCustom {
+  background-color: var(--light);
+  color: black;
+}
+
+.modalFooterCustom {
+  background-color: var(--dark);
+}
