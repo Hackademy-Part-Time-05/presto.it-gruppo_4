@@ -2,13 +2,19 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class image extends Model {
+class Image extends Model
+{
     use HasFactory;
     protected $fillable = ['path'];
+
+    protected $casts = [
+        'labels' => 'array'
+    ];
+
     public function announcement() {
         return $this->belongsTo(Announcement::class);
     }
@@ -26,6 +32,6 @@ class image extends Model {
     }
 
     public function getUrl($width = null, $height = null) {
-        return image::getUrlByFilePath($this->path, $width, $height);
+        return Image::getUrlByFilePath($this->path, $width, $height);
     }
 }
