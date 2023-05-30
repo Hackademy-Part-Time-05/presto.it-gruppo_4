@@ -15,7 +15,7 @@
 <body class="vh100 container-fluid d-flex flex-column justify-content-between m-0 p-0">
 
         <x-offcanvas />
-        <div>spazio</div>
+        <div id="spacer">spazio</div>
         <x-navbar/>
             @if (session()->has('access.denied'))
             <div class="flex flex-row justify-center my 2 alert alert-danger">
@@ -35,6 +35,8 @@
         <x-footer/>
     @livewireScripts
     <script>
+        document.querySelector('#spacer').style.height = document.querySelector('#offcanvasButton').offsetHeight+"px";
+        
         var toggleCounter = 0
         let toggleSkin = document.getElementById('skinButton');
         toggleSkin.addEventListener('click',function()

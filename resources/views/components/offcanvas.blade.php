@@ -2,6 +2,7 @@
 
 <div class="fixed-top d-flex justify-content-end gradient0">
   <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="offcanvasButton"><i class="text-light fa-solid fa-language fa-2xl"></i></button>
+  <button class="btn btn-round" id="skinButton"><i class="fa-solid fa-shirt text-light"></i></button>
 </div>
 
 <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
@@ -20,7 +21,6 @@
       <div class="border-bottom rounded">
         <x-_locale lang="en"/>  
       </div>
-      <button class="btn btn-round border-bottom" id="skinButton"><i class="fa-solid fa-shirt"></i></button>
     </div>
   </div>
 </div>
