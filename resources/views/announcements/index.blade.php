@@ -6,7 +6,7 @@
             </div>
         </div>
     </div>
-    <section class="container">
+    <section class="container flex-grow-1">
         <div class="row justify-content-center d-flex">
             @foreach ($announcements as $announcement)
             <div class="col-12 col-md-6 col-xl-4 d-flex justify-content-center my-0">

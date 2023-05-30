@@ -80,7 +80,6 @@
           <input type="search" name="searched" class="rounded-start imputSearchNavbar" placeholder="{{__('ui.search...')}}" aria-label="Search">
           <button class="rounded-end buttonSearchNavbar" type="submit">{{__('ui.search')}}</button>
           </form>
-          <button class="btn btn-round" id="skinButton"><i class="fa-solid fa-shirt"></i></button>
         </li>
       </ul>
     </div>
