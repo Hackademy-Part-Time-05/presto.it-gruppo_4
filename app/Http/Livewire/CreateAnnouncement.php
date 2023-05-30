@@ -10,6 +10,7 @@ use Livewire\WithFileUploads;
 use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionSafeSearch;
 use App\Jobs\RemoveFaces;
+use App\Jobs\WatermarkJob;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 
@@ -86,8 +87,8 @@ class CreateAnnouncement extends Component {
                 RemoveFaces::withChain([
                     new ResizeImage($newImage->path, 400, 300),
                     new GoogleVisionSafeSearch($newImage->id),
-                    new GoogleVisionLabelImage($newImage->id)
-
+                    new GoogleVisionLabelImage($newImage->id),
+                    new WatermarkJob($newImage->id),
                 ])->dispatch($newImage->id);
 
 
