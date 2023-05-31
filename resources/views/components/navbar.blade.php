@@ -51,6 +51,10 @@
           </li>
           @else
             <li class="nav-item dropdown">
+              @if ((Auth::user()->is_revisor) && (App\Models\Announcement::toBeRevisionedCount()!=0))
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">!
+                </span>
+              @endif
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 {{__('ui.welcome')}}, {{ auth()->user()->name }}
               </a>
@@ -76,7 +80,7 @@
             </li>
             
           @endguest
-          <form action="{{route('announcements.search')}}" method="GET" class="d-flex">
+          <form action="{{route('announcements.search')}}" method="GET" class="d-flex ms-5">
           <input type="search" name="searched" class="rounded-start imputSearchNavbar" placeholder="{{__('ui.search...')}}" aria-label="Search">
           <button class="rounded-end buttonSearchNavbar" type="submit">{{__('ui.search')}}</button>
           </form>
