@@ -1,5 +1,11 @@
+
+<!--da questa pagina si richiama il contenuto di $this-->
+
+
 <x-main>
     <x-header />
+    
+    <x-recensioni/>
 
     {{-- <section class="container-fluid flex-grow-1">
         <div class="row h-100">
