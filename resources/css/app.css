@@ -83,6 +83,10 @@ background: linear-gradient(90deg, rgba(15,255,149,1) 0%, rgba(39,93,173,1) 100%
   background-color:var(--lightblue);
 }
 
+.flex-none {
+  flex:none;
+}
+
 /*===BUTTON===*/
 
 .btn {

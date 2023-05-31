@@ -15,7 +15,7 @@
 <body class="vh100 container-fluid d-flex flex-column justify-content-between m-0 p-0">
 
         <x-offcanvas />
-        <div id="spacer">spazio</div>
+        <div id="spacer" class="flex-none">spazio</div>
         <x-navbar/>
             @if (session()->has('access.denied'))
             <div class="flex flex-row justify-center my 2 alert alert-danger">
