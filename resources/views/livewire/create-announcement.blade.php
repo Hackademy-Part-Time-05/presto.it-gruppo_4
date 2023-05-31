@@ -37,7 +37,6 @@
                             <label for="body" class="fw-bold">{{__('ui.description')}}</label><br>
                             <input wire:model.lazy="body" type="text" class="imputRegisterLoginCustom">
                             @error('body') <span class="fs-5 text-danger">{{ $message }}</span> @enderror
-
                         </div>
 
                        
@@ -50,7 +49,7 @@
                         <div class="col-12">
                             <label for="images" class="fw-bold">{{__('ui.images')}}</label><br>
                             <input wire:model="temporary_images" type="file" multiple name="images" class="custom-file-input"
-                            @error('temporary_images.*') is-invalid @enderror" id="customFile">
+                            @error('temporary_images.*') is-invalid @enderror" id="customFile" required>
                             <label class="imputRegisterLoginCustom" for="customFile"><label class="custom-file-label me-3" for="customFile">{{__('ui.chooseFile')}}</label><span class="fs-5"> {{__('ui.selectTheImages')}}</span></label>
                             @error('temporary_images.*') <span class="fs-5 text-danger">{{ $message }}</span> @enderror
                         </div>

@@ -32,7 +32,7 @@ class CreateAnnouncement extends Component {
         'category' => 'required',
         'price' => 'required|numeric|max:10000000',
         'temporary_images.*' => 'image|max:1024',
-        'images.*' => 'image|max:1024',
+        'images.*' => 'required|image|max:1024',
 
 
     ];
