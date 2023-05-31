@@ -57,4 +57,9 @@ return [
 'cancel' => 'Cancelar',
 'areYouSureYouWantToSubmitTheRequestToBecomeaReviewer' => '¿Estás seguro de que quieres enviar la solicitud para convertirte en revisor?',
 'confirm' => 'Confirmación',
+'buy' => 'Comprar',
+'viewourads' => 'Ver nuestros anuncios',
+'doYouWantSomethingSearchForItQuicklyAndEasily' => '¿Deseas algo? ¡Búscalo rápido y fácil!',
+'quicklyAskTo' => '¡Rápido, solicita',
+'becomeaReviewerHeader' => 'Ser revisor!',
 ];

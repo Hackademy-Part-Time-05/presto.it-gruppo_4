@@ -57,4 +57,11 @@ return [
 'cancel' => 'Cancel',
 'areYouSureYouWantToSubmitTheRequestToBecomeaReviewer' => 'Are you sure you want to submit the request to become a reviewer?',
 'confirm' => 'Confirm',
+'buy' => 'Buy',
+'viewourads' => 'View our ads',
+'doYouWantSomethingSearchForItQuicklyAndEasily' => 'Do you want something? Search for it quickly and easily!',
+'workWith' => 'Work with',
+'us' => 'Us',
+'quicklyAskTo' => 'Quickly, ask to',
+'becomeaReviewerHeader' => 'Become a reviewer!',
 ];
