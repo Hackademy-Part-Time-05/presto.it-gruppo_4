@@ -1,3 +1,8 @@
+
+@section('title')
+    Presto.it - {{__('ui.login')}}
+@endsection
+
 <x-main>
     <section class="container-sm my-5">
         <div class="row justify-content-center">

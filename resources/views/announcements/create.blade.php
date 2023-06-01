@@ -1,3 +1,9 @@
+
+@section('title')
+    Presto.it - {{__('ui.createYourAdvertisement')}}
+@endsection
+
+
 <x-main>
     <section class="container gradient0 shadow">
         <div class="row">

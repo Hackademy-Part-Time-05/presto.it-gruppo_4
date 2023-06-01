@@ -1,3 +1,7 @@
+@section('title')
+    Presto.it - {{__('ui.announcements')}}
+@endsection
+
 <x-main>
     <div class="container-fluid p-3 gradient1 shadow mb-4">
         <div class="row">
