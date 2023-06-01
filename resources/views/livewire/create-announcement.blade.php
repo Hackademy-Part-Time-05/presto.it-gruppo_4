@@ -74,7 +74,7 @@
 
                         
                         <div class="col-12">
-                            <button class="btn btn-bg btn-dark rounded-pill my-3" type="submit">{{__('ui.post')}}</button>
+                            <button id="uiPost" class="btn btn-bg btn-dark rounded-pill my-3" type="submit">{{__('ui.post')}}</button>
                         </div>
                     </div>
                 </form>
