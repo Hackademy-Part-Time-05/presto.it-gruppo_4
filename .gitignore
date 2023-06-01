@@ -20,3 +20,4 @@ yarn-error.log
 config/app.php
 /storage/*.index
 google_credential.json
+slides.html
