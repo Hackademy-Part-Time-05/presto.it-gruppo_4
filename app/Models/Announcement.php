@@ -28,21 +28,25 @@ class Announcement extends Model {
         $this->save();
         return true;
     }
-    
-    public function toSearchableArray()
-    {
+
+    public function toSearchableArray() {
         $category = $this->category;
         $array = [
-            'id'=>$this->id,
-            'title'=>$this->title,
-            'body'=>$this->body,
-            'category'=>$this->category,
+            'id' => $this->id,
+            'title' => $this->title,
+            'body' => $this->body,
+            'category' => $this->category,
         ];
-        return $array;    
+        return $array;
     }
-    public function images(){
-    
+    public function images() {
+
         return $this->hasMany(Image::class);
-        
+    }
+
+    public function setRevisedBy($value) {
+        $this->revised_by = $value;
+        $this->save();
+        return true;
     }
 }
