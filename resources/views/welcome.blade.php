@@ -5,6 +5,8 @@
 <x-main>
     <x-header />
     
+    <x-statistic/>
+    
     <x-recensioni/>
 
     {{-- <section class="container-fluid flex-grow-1">

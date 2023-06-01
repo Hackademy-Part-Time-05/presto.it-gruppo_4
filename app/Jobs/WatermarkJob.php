@@ -41,8 +41,10 @@ class WatermarkJob implements ShouldQueue
 
        putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
        $image=SpatieImage::load($srcPath);
-       $image->watermark('resources/img/logoWatermark.png') 
-       ->watermarkPosition(Manipulations::POSITION_BOTTOM)
+       $image->watermark('resources/img/logoWatermark.png')
+       ->watermarkHeight(300,Manipulations::UNIT_PIXELS)
+       ->watermarkWidth(250,Manipulations::UNIT_PIXELS)
+       ->watermarkPosition(Manipulations::POSITION_CENTER)
        ->watermarkPadding(55)
        ->watermarkOpacity(50);
        $image->save($srcPath);
