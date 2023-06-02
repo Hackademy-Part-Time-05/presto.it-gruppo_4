@@ -80,9 +80,9 @@
             </li>
             
           @endguest
-          <form action="{{route('announcements.search')}}" method="GET" class="d-flex ms-5">
+          <form action="{{route('announcements.search')}}" method="GET" class="d-flex ms-3">
           <input type="search" name="searched" class="rounded-start imputSearchNavbar" placeholder="{{__('ui.search...')}}" aria-label="Search">
-          <button class="rounded-end buttonSearchNavbar" type="submit">{{__('ui.search')}}</button>
+          <button class="rounded-end buttonSearchNavbar" type="submit"><i class="fas fa-search"></i></button>
           </form>
         </li>
       </ul>

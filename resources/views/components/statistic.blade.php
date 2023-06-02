@@ -4,7 +4,7 @@
    
   
     <div class="container overflow-hidden">
-      <div class="row justify-content-xl-center gy-3 gy-sm-4">
+      <div class="row justify-content-end gy-3 gy-sm-4">
         <div class="col-12 col-sm-6 col-xl-5">
           <div class="bg-green rounded shadow p-3 p-md-4 p-xxl-5 border border-dark">
             <i class="bi bi-people-fill fs-1 text-dark"></i>
