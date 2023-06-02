@@ -32,7 +32,7 @@
             <i class="bi bi-globe-europe-africa fs-1 text-dark"></i>
             <p class="text-dark fw-bold">+50.000 {{__('ui.SALESWORLDWIDE')}}</p>
             <p class="text-dark fw-bold m-0">{{__('ui.countlessProductsShipped')}}</p>
-            <p class="text-dark fw-bold">{{__('ui.Worldwide')}}</p>
+            <p class="text-dark fw-bold">{{__('ui.worldwide')}}</p>
           </div>
         </div>
       </div>

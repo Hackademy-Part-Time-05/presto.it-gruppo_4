@@ -74,4 +74,10 @@ return [
 'thousandsOfItemsViewedWhyDontYouPublishYourFirstAd' => 'Thousands of items viewed! Why don\'t you publish your first ad?',
 'countlessProductsShipped' => 'Countless products shipped',
 'worldwide' => 'worldwide!',
+'recentAds' => 'RECENT ADS',
+'hereAreSomeOfOurReviews' => 'HERE ARE SOME OF OUR REVIEWS',
+'HERESWHATTHEYSAYABOUTUS' => 'HERE\'S WHAT THEY SAY ABOUT US',
+'LETUSKNOWYOUROPINION' => 'LET US KNOW YOUR OPINION',
+'writeYourReviewHere' => 'Write your review here',
+'SUBMIT' => 'SUBMIT',
 ];

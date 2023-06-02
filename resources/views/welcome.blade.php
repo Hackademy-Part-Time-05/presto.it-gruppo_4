@@ -12,7 +12,7 @@
 
         <div>
             <h2 class="fw-bold text-center mt-4">
-                ALCUNI ANNUNCI RECENTI
+                {{__('ui.recentAds')}}
             </h2>
         </div>
 

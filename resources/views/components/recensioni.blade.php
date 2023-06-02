@@ -3,11 +3,11 @@
 
   <div class="row">
 
-    <h2 class="text-center my-5 fw-bold">ECCO ALCUNE DELLE VOSTRE RECENSIONI:</h2>
+    <h2 class="text-center my-5 fw-bold">{{__('ui.hereAreSomeOfOurReviews')}}</h2>
 
     <div class="col-12 col-md-6 card my-5 border-0">
         <div class="card-header rounded-top bg-green text-dark fw-bold border border-dark">
-          ECCO COSA DICONO DI NOI:
+          {{__('ui.HERESWHATTHEYSAYABOUTUS')}}:
         </div>
         <div class="card-body bg-dark text-light rounded-bottom border border-dark">
           <blockquote class="blockquote mb-0">
@@ -19,7 +19,7 @@
     
       <div class="col-12 col-md-6 card my-5 border-0">
         <div class="card-header rounded-top bg-green text-dark fw-bold border border-dark">
-          ECCO COSA DICONO DI NOI:
+          {{__('ui.HERESWHATTHEYSAYABOUTUS')}}:
         </div>
         <div class="card-body bg-dark text-light rounded-bottom border border-dark">
           <blockquote class="blockquote mb-0">
@@ -31,7 +31,7 @@
     
       <div class="col-12 col-md-6 card my-5 border-0">
         <div class="card-header rounded-top bg-green text-dark fw-bold border border-dark">
-          ECCO COSA DICONO DI NOI:
+          {{__('ui.HERESWHATTHEYSAYABOUTUS')}}:
         </div>
         <div class="card-body bg-dark text-light rounded-bottom border border-dark">
           <blockquote class="blockquote mb-0">
@@ -43,7 +43,7 @@
 
       <div class="col-12 col-md-6 card my-5 border-0">
         <div class="card-header rounded-top bg-green text-dark fw-bold border border-dark">
-          ECCO COSA DICONO DI NOI:
+          {{__('ui.HERESWHATTHEYSAYABOUTUS')}}:
         </div>
         <div class="card-body bg-dark text-light rounded-bottom border border-dark">
           <blockquote class="blockquote mb-0">
@@ -62,7 +62,7 @@
   <div class="container-fluid">
 
     <div>
-      <h2 class="my-2 text-center fw-bold">FACCI SAPERE LA TUA</h2>
+      <h2 class="my-2 text-center fw-bold">{{__('ui.LETUSKNOWYOUROPINION')}}</h2>
     </div>
 
     <div class="row justify-content-center">
@@ -71,11 +71,11 @@
           @csrf
 
           <div class="my-3 px-5 px-md-2">
-              <label class="m-2 text-dark fw-bold" for="text">Scrivi qui la tua recensione:</label>
+              <label class="m-2 text-dark fw-bold" for="text">{{__('ui.writeYourReviewHere')}}:</label>
               <textarea cols="30" rows="5" type="text" name="text" class="imputRegisterLoginCustom border border-dark"></textarea>
           </div>
           <div class="d-flex justify-content-center">
-              <button class="btn btnDark mb-2 fst-italic shadow rounded-pill">INVIA</button>
+              <button class="btn btnDark mb-2 fst-italic shadow rounded-pill">{{__('ui.SUBMIT')}}</button>
           </div>
       </form>
   </div>

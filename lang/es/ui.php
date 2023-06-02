@@ -72,4 +72,10 @@ return [
 'thousandsOfItemsViewedWhyDontYouPublishYourFirstAd' => '¡Miles de artículos visualizados! ¿Por qué no publicas tu primer anuncio?',
 'countlessProductsShipped' => '¡Innumerables productos enviados',
 'worldwide' => 'a todo el mundo!',
+'recentAds' => 'ANNUNCIOS RECIENTES',
+'hereAreSomeOfOurReviews' => 'AQUÍ ESTÁN ALGUNAS DE NUESTRAS RESEÑAS',
+'HERESWHATTHEYSAYABOUTUS' => 'AQUÍ ESTÁN LO QUE DICEN DE NOSOTROS',
+'LETUSKNOWYOUROPINION' => '¡DÉJANOS SABER TU OPINIÓN!',
+'writeYourReviewHere' => 'Escribe tu reseña aquí',
+'SUBMIT' => 'ENVIAR',
 ];
