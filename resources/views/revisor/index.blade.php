@@ -4,7 +4,7 @@
 @endphp
 
 <x-main>
-    <div class="container-fluid p-5 gradient0 p-5 shadow mb-4">
+    <div class="container-fluid px-5 py-4 gradient0 shadow mb-4">
         <div class="row">
             <div class="col-12 text-dark d-flex justify-content-start p-0 m-0">
                 <h1 class="text-uppercase fst-italic fw-bold">

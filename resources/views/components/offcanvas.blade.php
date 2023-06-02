@@ -1,6 +1,11 @@
 
 
 <div class="fixed-top d-flex justify-content-end gradient0">
+  <span 
+    class="text-light fst-italic ms-auto me-auto fs-4">
+      @if (session()->has('access.denied')){{session('access.denied')}}@endif
+      @if (session()->has('message')){{session('message')}}@endif
+  </span>
   <button class="btn border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling" id="offcanvasButton"><i class="text-light fa-solid fa-language fa-2xl"></i></button>
   <button class="btn btn-round" id="skinButton"><i class="fa-solid fa-shirt text-light"></i></button>
 </div>

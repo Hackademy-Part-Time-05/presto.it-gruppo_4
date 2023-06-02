@@ -17,17 +17,7 @@
         <x-offcanvas />
         <div id="spacer" class="flex-none">spazio</div>
         <x-navbar/>
-            @if (session()->has('access.denied'))
-            <div class="flex flex-row justify-center my 2 alert alert-danger">
-                {{session('access.denied')}}
-            </div>
-            @endif
-
-            @if (session()->has('message'))
-                <div class="flex flex-row justify-center my 2 alert alert-success">
-                    {{session('message')}}
-                </div>
-            @endif
+            
 
 
         {{$slot}}
@@ -36,6 +26,7 @@
     @livewireScripts
     <script>
         document.querySelector('#spacer').style.height = document.querySelector('#offcanvasButton').offsetHeight+"px";
+        // window.addEventListener('scroll',function(){document.querySelector('#mainNavbar').classList.toggle('d-none')});
         
         var toggleCounter = 0
         let toggleSkin = document.getElementById('skinButton');
