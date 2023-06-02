@@ -6,6 +6,24 @@
     <x-header />
     
     <x-statistic/>
+
+
+    <section class="container-fluid flex-grow-1 border-top border-dark">
+
+        <div>
+            <h2 class="fw-bold text-center mt-4">
+                ALCUNI ANNUNCI RECENTI
+            </h2>
+        </div>
+
+        <div class="row justify-content-center d-flex">
+            @foreach ($announcements->take(5) as $announcement)
+            <div class="col-12 col-md-2 d-flex justify-content-center my-0">
+                <x-announcement_card :$announcement />
+            </div>
+            @endforeach
+        </div>
+    </section>
     
     <x-recensioni/>
 

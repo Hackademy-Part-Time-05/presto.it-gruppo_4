@@ -14,7 +14,7 @@
 </header> --}}
 
 
-<div id="carouselExampleIndicators" class="carousel slide">
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -42,8 +42,8 @@
         <div class="row my-5">
           <div class="col-12">
             <div class="d-flex flex-column align-items-center mt-3">
-              <h2 class="display-2 text-dark animate__animated animate__fadeInRightBig">{{__('ui.buy')}}</h2>
-              <h2 class="display-2 text-light animate__animated animate__fadeInLeftBig">{{__('ui.immediately')}}</h2>
+              <h2 class="display-2 text-dark animate__animated animate__fadeInLeftBig">{{__('ui.buy')}}</h2>
+              <h2 class="display-2 text-light animate__animated animate__fadeInRightBig">{{__('ui.immediately')}}</h2>
             </div>
             <div class="text-center mt-4">
               <p class=" h3 text-light animate__bounceIn">{{__('ui.doYouWantSomethingSearchForItQuicklyAndEasily')}} </p> 
