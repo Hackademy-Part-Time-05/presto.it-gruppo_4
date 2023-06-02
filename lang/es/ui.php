@@ -78,4 +78,13 @@ return [
 'LETUSKNOWYOUROPINION' => '¡DÉJANOS SABER TU OPINIÓN!',
 'writeYourReviewHere' => 'Escribe tu reseña aquí',
 'SUBMIT' => 'ENVIAR',
+'adults' => 'Adultos',
+'violence' => 'Violencia',
+'spoof' => 'Falsificación',
+'medical' => 'Médico',
+'explicitcontent' => 'Contenido explícito',
+'creationDate' => 'Fecha de creación',
+'revisionDate' => 'Fecha de revisión',
+'action' => 'Acción',
+'putBackInQueue' => 'Volver a poner en cola',
 ];

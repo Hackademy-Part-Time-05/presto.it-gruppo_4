@@ -77,4 +77,13 @@ return [
 'LETUSKNOWYOUROPINION' => 'FACCI SAPERE LA TUA',
 'writeYourReviewHere' => 'Scrivi qui la tua recensione',
 'SUBMIT' => 'INVIA',
+'adults' => 'Adulti',
+'violence' => 'Violenza',
+'spoof' => 'Satira',
+'medical' => 'Medicina',
+'explicitcontent' => 'Contenuti espliciti',
+'creationDate' => 'Data di creazione',
+'revisionDate' => 'Data di revisione',
+'action' => 'Azione',
+'putBackInQueue' => 'Rimetti in coda',
 ];

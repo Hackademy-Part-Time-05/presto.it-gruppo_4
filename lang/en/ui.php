@@ -80,4 +80,13 @@ return [
 'LETUSKNOWYOUROPINION' => 'LET US KNOW YOUR OPINION',
 'writeYourReviewHere' => 'Write your review here',
 'SUBMIT' => 'SUBMIT',
+'adults' => 'Adults',
+'violence' => 'Violence',
+'spoof' => 'Spoof',
+'medical' => 'Medical',
+'explicitcontent' => 'Explicit content',
+'creationDate' => 'Creation date',
+'revisionDate' => 'Revision date',
+'action' => 'Action',
+'putBackInQueue' => 'Put back in queue',
 ];

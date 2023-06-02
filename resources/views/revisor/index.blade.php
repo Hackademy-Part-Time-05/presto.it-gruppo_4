@@ -58,23 +58,23 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <td>Adulti:</td>
+                                    <td>{{__('ui.adults')}}:</td>
                                     <td><span class="{{$image->adult}}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Satira:</td>
+                                    <td>{{__('ui.spoof')}}:</td>
                                     <td><span class="{{$image->spoof}}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Medicina:</td>
+                                    <td>{{__('ui.medical')}}:</td>
                                     <td><span class="{{$image->medical}}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Violenza:</td>
+                                    <td>{{__('ui.violence')}}:</td>
                                     <td><span class="{{$image->violence}}"></span></td>
                                 </tr>
                                 <tr>
-                                    <td>Contenuti espliciti:</td>
+                                    <td>{{__('ui.explicitcontent')}}:</td>
                                     <td><span class="{{$image->racy}}"></span></td>
                                 </tr>
                             </tbody>
@@ -151,24 +151,24 @@
 <div class="container flex-grow-1 my-5">
     <table class="table">
         <tr>
-            <th>Titolo</th>
-            <th>Categoria</th>
-            <th>Prezzo</th>
-            <th>Data di creazione</th>
-            <th>Data di revisione</th>
-            <th>Azione</th>
+            <th>{{__('ui.title')}}</th>
+            <th>{{__('ui.category')}}</th>
+            <th>{{__('ui.price')}}</th>
+            <th>{{__('ui.creationDate')}}</th>
+            <th>{{__('ui.revisionDate')}}</th>
+            <th>{{__('ui.action')}}</th>
         </tr>
         @foreach ($announcements_checked as $announcement)
             <tr>
                 <td>{{$announcement->title}}</td>
-                <td>{{$announcement->category->name}}</td>
+                <td>{{Lang::get('category.' .$announcement->category->name)}}</td>
                 <td>{{$announcement->price}}</td>
                 <td>{{$announcement->created_at}}</td>
                 <td>{{$announcement->updated_at}}</td>
                 <td>
                     <form action="{{route('revisor.reset_announcement', ['announcement'=> $announcement])}}" method="POST">
                         @csrf @method('PATCH')
-                        <button type="submit" class="btn rounded-pill btn-success shadow">Rimetti in coda</button>
+                        <button type="submit" class="btn rounded-pill btn-success shadow">{{__('ui.putBackInQueue')}}</button>
                     </form>
                 </td>
             </tr>
