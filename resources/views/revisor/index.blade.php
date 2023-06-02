@@ -160,21 +160,17 @@
         </tr>
         @foreach ($announcements_checked as $announcement)
             <tr>
-                <th>{{$announcement->title}}</th>
-                <th>{{$announcement->category->name}}</th>
-                <th>{{$announcement->price}}</th>
-                <th>{{$announcement->created_at}}</th>
-                <th>{{$announcement->updated_at}}</th>
-                <th>
-                    <div class="row">
-                        <div class="col-12 col-md-6 d-flex align-items-center justify-content-center my-5">
-                            <form action="{{route('revisor.reset_announcement', ['announcement'=> $announcement])}}" method="POST">
-                                @csrf
-                                @method('PATCH')
-                                <button type="submit" class="btn rounded-pill btn-success shadow">Rimetti in coda</button>
-                            </form>
-                        </div>
-                </th>
+                <td>{{$announcement->title}}</td>
+                <td>{{$announcement->category->name}}</td>
+                <td>{{$announcement->price}}</td>
+                <td>{{$announcement->created_at}}</td>
+                <td>{{$announcement->updated_at}}</td>
+                <td>
+                    <form action="{{route('revisor.reset_announcement', ['announcement'=> $announcement])}}" method="POST">
+                        @csrf @method('PATCH')
+                        <button type="submit" class="btn rounded-pill btn-success shadow">Rimetti in coda</button>
+                    </form>
+                </td>
             </tr>
         @endforeach
     </table>

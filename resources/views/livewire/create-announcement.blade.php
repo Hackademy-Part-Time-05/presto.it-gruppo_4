@@ -1,6 +1,4 @@
-<div>
-        
-    <div class="container mt-5">
+        <div class="container mt-5">
         <div class="row">
             <div class="col-10 col-md-10 mx-auto">
                 <form wire:submit.prevent="store">
@@ -81,4 +79,3 @@
             </div>
         </div>
     </div>
-</div>
