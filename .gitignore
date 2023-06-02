@@ -21,4 +21,3 @@ config/app.php
 /storage/*.index
 google_credential.json
 google-credentials.json
-slides.html
